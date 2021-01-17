@@ -1768,5 +1768,41 @@ a.cart-action-a {
     box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
+.jvFDcV {
+    width: 50px;
+    height: 50px;
+    order: 1;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.4) 2px 2px 6px;
+    transition: all 0.5s ease 0s;
+    position: relative;
+    z-index: 200;
+    display: block;
+    border: 0px;
+    background: rgb(77, 194, 71) !important;
+}
+
+.hasyTc {
+    opacity: 1;
+    display: block;
+    position: absolute;
+    bottom: -1.6em;
+    left: -0.5em;
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 11px;
+    line-height: 11px;
+    width: 60px;
+    border: 0px;
+    max-width: inherit;
+    color: rgb(175, 175, 175) !important;
+}
+
 
 /* ======================================================================= */
