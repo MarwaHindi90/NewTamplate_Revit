@@ -21,15 +21,15 @@
     <!-- My css style -->
 
     <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/star-rating.min.css">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/media.css" />
-    <!-- <link rel="stylesheet" href="css/style_E.css" />
-    <link rel="stylesheet" href="css/media_E.css" /> -->
 
 
 </head>
 
 <body>
+
     <div class="d-flex" id="wrapper">
         <div id="sideBar-wraper">
             <div class="closse" id="dismiss">
@@ -72,9 +72,9 @@
                         <a class="nav-link" href="logout.html">تسجيل الخروج</a>
                     </li>
 
-                    <li class="nav-item noh">
-                        <a class="nav-link no-border nohover" href="cart.html"><img src="img/icon-shopping-cart.png" alt=""><span class="item-no">0</span></a>
-                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link no-border nohover  " href="cart.html"><img src="img/cartshop.png" alt=""><span class="cart_count">0</span></a>
+                    </li> -->
                 </ul>
             </nav>
 
@@ -220,7 +220,7 @@
                                         <div class="main_menu d-none d-lg-block">
                                             <ul>
                                                 <li class=" active "><a href="index.html">الرئيسية</a></li>
-                                                <li class=""><a href="">معلومات عنا</a></li>
+                                                <li class=""><a href="about.html">معلومات عنا</a></li>
                                                 <li class=""><a href="">فروعنا</a></li>
                                                 <li class=""><a href="">حمل التطبيقات</a></li>
                                                 <li class=""><a href="">طرق الدفع</a></li>
@@ -228,18 +228,14 @@
                                                 <li class=""><a href="contact.html">تواصل معنا</a></li>
                                                 <li class="cart_link cart_menu" style="display:none">
                                                     <ul class="nav left-nav">
-                                                        <div id="addtocartmenue" data-pjax-container="" data-pjax-push-state="" data-pjax-timeout="1000">
-                                                            <li class="nav-item dropdown">
-                                                                <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                                                                    <img src="img/cartshop.png">
-                                                                    <!--<span class="d-none d-sm-block shoping-span">سلة التسوق</span>-->
-                                                                    <span class="cart_count">0</span>
+                                                        <a class="nav-link dropdown" href="cart.html">
+                                                            <img src="img/cartshop.png">
+                                                            <span class="cart_count">0</span>
 
-                                                                </a>
-                                                            </li>
-                                                        </div>
-                                                    </ul>
-                                                    <!--mini cart end-->
+                                                        </a>
+                                                </li>
+                                                </ul>
+                                                <!--mini cart end-->
                                                 </li>
                                             </ul>
 
@@ -382,7 +378,7 @@
                                 <ul>
                                     <li><a href="index.html">الرئيسية</a></li>
                                     <li> | </li>
-                                    <li>استعادة كلمة المرور</li>
+                                    <li>تفاصيل الفاتورة</li>
                                 </ul>
                             </div>
                         </div>
@@ -391,43 +387,342 @@
             </div>
             <!-- End Section breadcrumb_content  -->
             <!-- =========================================================================================== -->
-            <!-- Start Reset Password section  -->
-            <div class="site-request-password-reset text-center container my-md-3 mt-3 mb-5">
-                <div class="container">
-                    <div class="consoles_product_title inner_title ">
-                        <h5 class="section_title float-right">استعادة كلمة المرور</h5>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-                <div class="row text-center">
-                    <div class="col-lg-5" style="float:none;margin:0 auto">
-                        <p class="text-justify mb-0">ادخل بريدك الالكتروني المسجل حتى نرسل لك رابط استعادة كلمة المرور </p>
-                        <form id="" action="" method="">
-                            <input type="hidden" name="" value="">
-                            <div class="form-group ">
-                                <div class="right-inner-addon">
-                                    <i class="fa fa-envelope-open-o" aria-hidden="true"></i>
-                                    <div class="form-group field-passwordresetrequestform-email required">
-                                        <input type="text" id="" class=" form-control login_form" name="" placeholder="البريد الالكتروني" aria-required="true">
 
-                                        <p class="help-block help-block-error"></p>
+            <!-- =========================================================================================== -->
+            <div class="container-fluid ">
+                <div class="row">
+                    <section class="w-100 my-4">
+                        <div class="wizard">
+                            <!-- ================================================== -->
+                            <ul class="nav nav-wizard d-none d-lg-flex">
+                                <li class="tab-header ">
+                                    <div id="addtocart3" data-pjax-container="" data-pjax-push-state="" data-pjax-timeout="1000">
+                                        <a href="cart.html" data-method=""><span class="no">01</span>سلة التسوق</a> </div>
+                                </li>
+                                <li class="tab-header active ">
+                                    <a href="checkout.html">
+                                        <span class="no">02</span> تفاصيل الفاتورة </a>
+                                </li>
+                                <li class="tab-header disabled">
+                                    <a href="checkout.html">
+                                        <span class="no">03</span> انهاء الطلب </a>
+                                </li>
+                            </ul>
+                            <!-- ================================================== -->
+
+                            <div class="tab-content" style="margin-top:20px">
+                                <div class="tab-pane active">
+                                    <div class="container-fluid">
+                                        <form id="bookinghome" action="/site/checkout" method="POST">
+                                            <input type="hidden" name="_csrf-frontend" value="vaPYO6hauImfqIeeNCzanYl-aiawpYzAyVGKgKWvDw7P4esI8WOVvtrA8-h-G7_n6jQvF9-I7YyiAMnI6_56ew==">
+                                            <div class="row purchase-det">
+                                                <div class="col-md-8 col-12">
+                                                    <!-- <form class="contact-frm"> -->
+
+                                                    <div class="border_warp">
+
+
+                                                        <div class="form-group ">
+                                                            <div class="col-md-12 padding_right_0">
+                                                                <div class="form-group field-id1 required">
+                                                                    <label class="control-label" for="id1">الاسم</label>
+                                                                    <input type="text" id="id1" class="form-control add_ship_form_control" name="UserPurchas[name]" value="amr" maxlength="250" placeholder="الاسم" aria-required="true">
+
+                                                                    <div class="help-block"></div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-12 padding_right_0">
+                                                                <div class="form-group field-id2 required">
+                                                                    <label class="control-label" for="id2">البريد الالكتروني</label>
+                                                                    <input type="text" id="id2" class="form-control add_ship_form_control" name="UserPurchas[email]" value="alrajihi944@gmail.com" maxlength="250" placeholder="email" aria-required="true">
+
+                                                                    <div class="help-block"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <!----end from group--->
+
+                                                        <div class="form-group ">
+                                                            <div class="col-md-12 padding_right_0">
+                                                                <div class="form-group field-userpurchas-mobile required">
+                                                                    <label class="control-label" for="userpurchas-mobile">الجوال</label>
+                                                                    <input type="text" id="userpurchas-mobile" class="form-control add_ship_form_control" name="UserPurchas[mobile]" value="4454" maxlength="20" placeholder="الجوال" aria-required="true">
+
+                                                                    <div class="help-block"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group ">
+                                                            <div class="col-sm-12 padding_right_0">
+                                                                <div class="form-group field-userpurchas-zip">
+                                                                    <label class="control-label" for="userpurchas-zip">الرقم الضريبي للعميل</label>
+                                                                    <input type="text" id="userpurchas-zip" class="form-control add_ship_form_control2" name="UserPurchas[zip]" rows="6">
+
+                                                                    <div class="help-block"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <!----end from group--->
+                                                        <div class="form-group ">
+                                                            <div class="col-sm-12 padding_right_0">
+                                                                <div class="form-group field-userpurchas-description">
+                                                                    <label class="control-label" for="userpurchas-description">ملاحظات الطلب</label>
+                                                                    <textarea id="userpurchas-description" class="form-control add_ship_form_control2" name="UserPurchas[description]" rows="6"></textarea>
+
+                                                                    <div class="help-block"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <!----end from group--->
+
+                                                        <div class="form-group ">
+                                                            <div class="col-sm-12 padding_right_0">
+                                                                <div class="form-group field-userpurchas-delivery_method required">
+
+                                                                    <input type="hidden" name="UserPurchas[delivery_method]" value="">
+                                                                    <div id="userpurchas-delivery_method" role="radiogroup" aria-required="true"><label><input type="radio" name="UserPurchas[delivery_method]" value="1" checked=""> توصيل </label>
+                                                                        <label><input type="radio" name="UserPurchas[delivery_method]" value="2"> استلام من الفرع</label></div>
+
+                                                                    <div class="help-block"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="delevery_warp">
+                                                            <div class="form-group ">
+                                                                <div class="col-sm-12 padding_right_0">
+                                                                    <div class="form-group field-userpurchas-shipping_company">
+                                                                        <label class="control-label" for="userpurchas-shipping_company">شركات الشحن</label>
+                                                                        <select id="userpurchas-shipping_company" class="form-control">
+                <option value="">حدد شركة الشحن</option>
+                <option value="5">شركة سمسا اكسبرس</option>
+                <option value="4">يو بي اس</option>
+                <option value="3">الزاجل</option>
+                <option value="1">ارامكس</option>
+                </select>
+
+                                                                        <div class="help-block"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group ">
+                                                                <div class="col-sm-12 padding_right_0">
+                                                                    <div class="form-group field-userpurchas-city_id">
+                                                                        <label class="control-label" for="userpurchas-city_id">المدينة</label>
+                                                                        <select id="userpurchas-city_id" class="form-control" name="UserPurchas[city_id]">
+                <option value="">حدد المدينة</option>
+                <option value="4">جده - التوصيل 1</option>
+                <option value="2">مكه - التوصيل 1</option>
+                </select>
+
+                                                                        <div class="help-block"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="form-group ">
+                                                                <div class="col-sm-12 padding_right_0">
+                                                                    <div class="form-group field-userpurchas-venue">
+                                                                        <label class="control-label" for="userpurchas-venue">الحي</label>
+                                                                        <input type="text" id="userpurchas-venue" class="form-control add_ship_form_control2" name="UserPurchas[venue]" rows="6">
+
+                                                                        <div class="help-block"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="form-group ">
+                                                                <div class="col-sm-12 padding_right_0">
+                                                                    <div class="form-group field-userpurchas-address">
+                                                                        <label class="control-label" for="userpurchas-address">العنوان التفصيلي</label>
+                                                                        <input type="text" id="userpurchas-address" class="form-control add_ship_form_control2" name="UserPurchas[address]" value="address" rows="6">
+
+                                                                        <div class="help-block"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="branch_warp">
+                                                            <div class="form-group">
+                                                                <div class="col-sm-12 padding_right_0">
+                                                                    <div class="form-group field-userpurchas-branch_id">
+                                                                        <label class="control-label" for="userpurchas-branch_id">الفرع</label>
+                                                                        <select id="userpurchas-branch_id" class="form-control" name="UserPurchas[branch_id]">
+                <option value="">حدد الفرع</option>
+                <option value="8">الرجل المتميز  فرع الاحساء -طريق الخليج</option>
+                <option value="7">الرجل المتميز فرع الاحساء - السنيدية</option>
+                </select>
+
+                                                                        <div class="help-block"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-12">
+                                                    <div class="border_warp">
+                                                        <h4>الطلب الخاص بك </h4>
+                                                        <p>طلبك يحتوي على 1 منتج</p>
+                                                        <div id="addtocart2" data-pjax-container="" data-pjax-push-state="" data-pjax-timeout="1000">
+                                                            <p>اقل سعر للطلب 7</p>
+                                                            <div class="cart_height">
+                                                            </div>
+                                                            <table class="table bill-item-tble" id="addtocart4">
+                                                                <thead class="thead-light">
+                                                                    <tr>
+                                                                        <th>المنتجات</th>
+
+                                                                        <th>التفاصيل</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tfoot>
+                                                                    <tr>
+                                                                        <td class="bold">المجموع شامل الضريبة</td>
+
+                                                                        <td class="bold">50 SR</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="bold">المجموع باستثناء الضريبة</td>
+
+                                                                        <td class="bold">42.5 SR</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="bold">خدمة الشحن</td>
+
+                                                                        <td class="bold"><span id="shipping">0</span> SR</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="bold">ضريبة القيمة المضافة</td>
+
+                                                                        <td class="bold">(15%) 7.5 SR</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="bold">المجموع الاجمالي</td>
+
+                                                                        <td class="bold"><span id="total">50</span> SR</td>
+                                                                    </tr>
+                                                                </tfoot>
+                                                                <tbody>
+
+                                                                    <tr>
+                                                                        <td>بخور معمول سوبر ملكي</td>
+                                                                        <td>
+                                                                            الكمية : 1<br> السعر : 50 SR
+                                                                        </td>
+                                                                    </tr>
+
+                                                                </tbody>
+                                                            </table>
+                                                            <label>كوبون الخصم</label>
+
+                                                            <div class="form-group field-userpurchas-copun">
+
+                                                                <input type="text" id="userpurchas-copun" class="form-control" name="UserPurchas[copun]">
+
+                                                                <div class="help-block"></div>
+                                                            </div>
+                                                            <div class="check_code btn btn-primary contact-btn login-btn">تحقق من كود الخصم</div>
+                                                            <div id="check_code_show_result"></div>
+                                                            <br>
+                                                        </div>
+                                                    </div>
+                                                    <h3 class="margin_top_20">طريقة الدفع</h3>
+                                                    <div id="accordion" class="purchase">
+                                                        <div class="card">
+                                                            <div class="card-header" id="headingOne">
+                                                                <h5 class="mb-0">
+                                                                    <div class="form-check btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" data-parent="#accordion" href="#collapseOne">
+                                                                        <label class="form-check-label">
+                                                                                <input type="radio" name="UserPurchas[payment_method]" value="1" checked="">
+                                                                                
+                                                                                الدفع عند الاستلام																</label>
+                                                                    </div>
+
+                                                                </h5>
+                                                            </div>
+                                                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                                                <div class="card-body">
+                                                                    <p>سوف يتم اضافة رسوم اضافية على المبلغ الاجمالي مقدارها <a class="color_red">0 SR </a></p>
+                                                                    <span>المجموع الاجمالي : </span> <span class="color_red">57.5 SR </span>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="card">
+                                                            <div class="card-header" id="heading3">
+                                                                <h5 class="mb-0">
+                                                                    <div class="form-check btn btn-link collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse3" data-parent="#accordion" href="#collapse2">
+                                                                        <label class="form-check-label">
+                                                                            <input type="radio" name="UserPurchas[payment_method]" value="2">															
+                                                                            حوالة مصرفية مباشرة															</label>
+                                                                    </div>
+
+                                                                </h5>
+                                                            </div>
+                                                            <div id="collapse2" class="collapse " aria-labelledby="heading2" data-parent="#accordion">
+                                                                <div class="card-body relevant">
+                                                                    <p>يمكنك التحويل الى اي حساب من حساباتنا الموجوده فى الرابط التالي <a href="/payment" class="forget-pass" target="_blank"> لعرض الحسابات اضغط هنا   </a> </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="card">
+                                                            <div class="card-header" id="heading3">
+                                                                <h5 class="mb-0">
+                                                                    <div class="form-check btn btn-link collapsed" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3" data-parent="#accordion" href="#collapse3">
+                                                                        <label class="form-check-label">
+                                                                            <input type="radio" name="UserPurchas[payment_method]" value="3">															
+                                                                            دفع الكتروني															</label>
+                                                                    </div>
+
+                                                                </h5>
+                                                            </div>
+                                                            <div id="collapse3" class="collapse " aria-labelledby="heading3" data-parent="#accordion">
+                                                                <div class="card-body relevant">
+
+                                                                    <p>الرجاء التاكد من تعبئة الحقول قبل عملية الدفع </p>
+                                                                    <!--<div id="paypal-button"></div>-->
+                                                                    <ul class="payment-ul">
+                                                                        <li><img src="img/Mada.png"></li>
+                                                                        <li><img src="img/visa.png"></li>
+                                                                        <li><img src="img/mastercard.png"></li>
+                                                                        <li><img src="img/STC-pay.png"></li>
+                                                                    </ul>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+
+                                                    <div class="div-20"></div>
+
+                                                    <div class="form-group text-center margin_top_20">
+                                                        <button type="submit" class="btn btn-primary contact-btn login-btn">تأكيد الطلب</button>
+                                                    </div>
+                                                </div>
+                                                <!-- </form> -->
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="form-group ">
-                                <a type="submit" class="d-block btn btn-primary red-btn" name="">إرسال</a>
-                            </div>
-                        </form>
-                    </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </section>
                 </div>
             </div>
-            <!-- End Reset Password Section -->
-
             <!-- =========================================================================================== -->
-
-            <!-- =========================================================================================== -->
-
+            <div class="div-50"></div>
             <!-- Start Footer  -->
 
             <!-- Desktop footer -->
@@ -602,6 +897,7 @@
             <!--        End Scroll To-Top  -->
             <!-- =========================================================================================== -->
 
+
         </div>
 
         <!--Start Dark Overlay element -->
@@ -609,7 +905,6 @@
         <!--End Dark Overlay element -->
 
     </div>
-
 
     <script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>

@@ -23,13 +23,12 @@
     <link rel="icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/media.css" />
-    <!-- <link rel="stylesheet" href="css/style_E.css" />
-    <link rel="stylesheet" href="css/media_E.css" /> -->
 
 
 </head>
 
 <body>
+
     <div class="d-flex" id="wrapper">
         <div id="sideBar-wraper">
             <div class="closse" id="dismiss">
@@ -72,9 +71,9 @@
                         <a class="nav-link" href="logout.html">تسجيل الخروج</a>
                     </li>
 
-                    <li class="nav-item noh">
-                        <a class="nav-link no-border nohover" href="cart.html"><img src="img/icon-shopping-cart.png" alt=""><span class="item-no">0</span></a>
-                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link no-border nohover  " href="cart.html"><img src="img/cartshop.png" alt=""><span class="cart_count">0</span></a>
+                    </li> -->
                 </ul>
             </nav>
 
@@ -147,7 +146,15 @@
                                 <div class="col-lg-4 col-md-3 col-7">
                                     <div class="cart_area">
                                         <div class="wishlist_link">
-                                            <a href="login.html"><img class="show_in_large" src="img/menu.png" width="30"> <img src="img/account.png" width="30"></a>
+                                            <a class=" toggle" href="login.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="show_in_large" src="img/menu.png" width="30"> <img src="img/account.png" width="30"></a>
+                                            <div class="dropdown-menu login-user-menu" aria-labelledby="navbarDropdown">
+                                                <div class="account_name"> Username</div>
+                                                <a class="dropdown-item" href="acountsetting.html">الملف الشخصي</a>
+                                                <a class="dropdown-item" href="order.html">مشترياتي</a>
+                                                <a class="dropdown-item" href="favorite.html">قائمة المفضلة</a>
+
+                                                <a class="dropdown-item border-0" href="logout.html" data-method="post">تسجيل الخروج</a>
+                                            </div>
                                         </div>
                                         <div class="fav_link show_in_large">
                                             <a href="favorite.html"> <img src="img/favorit.png"></a>
@@ -198,10 +205,7 @@
                                                 </li>
 
                                             </ul>
-                                            <!--mini cart end-->
 
-                                            <!--mini cart-->
-                                            <!--mini cart end-->
                                         </div>
 
                                     </div>
@@ -382,7 +386,7 @@
                                 <ul>
                                     <li><a href="index.html">الرئيسية</a></li>
                                     <li> | </li>
-                                    <li>استعادة كلمة المرور</li>
+                                    <li>اعدادات الحساب</li>
                                 </ul>
                             </div>
                         </div>
@@ -391,41 +395,98 @@
             </div>
             <!-- End Section breadcrumb_content  -->
             <!-- =========================================================================================== -->
-            <!-- Start Reset Password section  -->
-            <div class="site-request-password-reset text-center container my-md-3 mt-3 mb-5">
-                <div class="container">
-                    <div class="consoles_product_title inner_title ">
-                        <h5 class="section_title float-right">استعادة كلمة المرور</h5>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-                <div class="row text-center">
-                    <div class="col-lg-5" style="float:none;margin:0 auto">
-                        <p class="text-justify mb-0">ادخل بريدك الالكتروني المسجل حتى نرسل لك رابط استعادة كلمة المرور </p>
-                        <form id="" action="" method="">
-                            <input type="hidden" name="" value="">
-                            <div class="form-group ">
-                                <div class="right-inner-addon">
-                                    <i class="fa fa-envelope-open-o" aria-hidden="true"></i>
-                                    <div class="form-group field-passwordresetrequestform-email required">
-                                        <input type="text" id="" class=" form-control login_form" name="" placeholder="البريد الالكتروني" aria-required="true">
-
-                                        <p class="help-block help-block-error"></p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-group ">
-                                <a type="submit" class="d-block btn btn-primary red-btn" name="">إرسال</a>
-                            </div>
-                        </form>
-                    </div>
+            <div class="container">
+                <div class="consoles_product_title inner_title ">
+                    <h5 class="section_title float-right"> اعدادات الحساب </h5>
+                    <div class="clearfix"></div>
                 </div>
             </div>
-            <!-- End Reset Password Section -->
-
             <!-- =========================================================================================== -->
+            <section class="setting my-md-5 my-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 d-none d-md-block mb-3">
 
+                            <ul class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <li class="nav-item " role="presentation">
+                                    <a class="nav-link active" id="acount-tab" href="acountsetting.html" role="tab" aria-controls="acount" aria-selected="true">إعدادات الحساب</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="messages-tab" href="order.html" role="tab" aria-controls="messages" aria-selected="false">مشترياتي</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="favorite-tab" href="favorite.html" role="tab" aria-controls="favorite" aria-selected="false">المفضلة</a>
+                                </li>
+                                <li class="nav-item no-border" role="presentation">
+                                    <a class="nav-link " id="settings-tab" href="logout.html" role="tab" aria-controls="settings" aria-selected="false">تسجيل الخروج</a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <div class="col-md-9 col-sm-7 clearfix">
+                            <!-- Acount-page setting  -->
+                            <div class="tab-pane active" id="acount" role="tabpanel" aria-labelledby="acount-tab">
+
+                                <div class="container frm">
+                                    <form id="" action="" method="" role="">
+
+                                        <div class="form-group mb-4">
+                                            <label class="control-label" for="username">الاسم بالكامل</label>
+                                            <input type="text" id="username" class="form-control" name="" aria-required="true" placeholder="الاسم بالكامل">
+                                        </div>
+
+                                        <div class="form-group mb-4 ">
+                                            <label class="control-label" for="mobile">رقم الهاتف</label>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="رقم الهاتف">
+                                                <div class="input-group-prepend">
+                                                    <button class="btn btn-light border dropdown-toggle form-control text-center" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" dir="ltr"><img src="img/eg.png" alt="" class="mr-2" width="30"> +2</button>
+                                                    <div class="dropdown-menu">
+                                                        <a class="dropdown-item" href="#"><img src="img/eg.png" alt="" class="mr-2" width="30"> +2</a>
+                                                        <a class="dropdown-item" href="#"><img src="img/eg.png" alt="" class="mr-2" width="30"> +2 </a>
+                                                        <a class="dropdown-item" href="#"> <img src="img/eg.png" alt="" class="mr-2" width="30"> +2</a>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group mb-4">
+                                            <label class="control-label" for="email">البريد الالكتروني</label>
+                                            <input type="text" id="email" class="form-control" name="" aria-required="true" placeholder="البريد الالكتروني">
+                                        </div>
+
+                                        <div class="form-group mb-4">
+                                            <label class="control-label" for="password">كلمة المرور</label>
+                                            <input type="password" id="password" class="form-control" name="" aria-required="true" placeholder="كلمة المرور">
+                                        </div>
+
+                                        <div class="form-group mb-4">
+                                            <label class="control-label" for="password-repeat">تأكيد كلمة المرور</label>
+                                            <input type="password" id="password-repeat" class=" form-control login_form" name="" aria-required="true" placeholder="تأكيد كلمة المرور">
+                                        </div>
+
+                                        <div class="form-group mb-4">
+                                            <label class="control-label" for="ad-details">العنوان</label>
+                                            <textarea id="ad-details" class="form-control" name="" rows="6" placeholder="العنوان بالكامل" aria-required="true"></textarea>
+                                        </div>
+
+                                        <div class="col-md-6 offset-md-3 col-12 mt-4 text-center mx-auto">
+                                            <a type="submit" class="d-block btn btn-primary dark-btn" name="">حفظ البيانات</a>
+                                        </div>
+
+                                    </form>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="div-50"></div>
+            </section>
             <!-- =========================================================================================== -->
 
             <!-- Start Footer  -->
@@ -602,6 +663,7 @@
             <!--        End Scroll To-Top  -->
             <!-- =========================================================================================== -->
 
+
         </div>
 
         <!--Start Dark Overlay element -->
@@ -609,7 +671,6 @@
         <!--End Dark Overlay element -->
 
     </div>
-
 
     <script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>

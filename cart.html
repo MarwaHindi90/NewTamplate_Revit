@@ -21,15 +21,15 @@
     <!-- My css style -->
 
     <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/star-rating.min.css">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/media.css" />
-    <!-- <link rel="stylesheet" href="css/style_E.css" />
-    <link rel="stylesheet" href="css/media_E.css" /> -->
 
 
 </head>
 
 <body>
+
     <div class="d-flex" id="wrapper">
         <div id="sideBar-wraper">
             <div class="closse" id="dismiss">
@@ -72,9 +72,9 @@
                         <a class="nav-link" href="logout.html">تسجيل الخروج</a>
                     </li>
 
-                    <li class="nav-item noh">
-                        <a class="nav-link no-border nohover" href="cart.html"><img src="img/icon-shopping-cart.png" alt=""><span class="item-no">0</span></a>
-                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link no-border nohover  " href="cart.html"><img src="img/cartshop.png" alt=""><span class="cart_count">0</span></a>
+                    </li> -->
                 </ul>
             </nav>
 
@@ -220,7 +220,7 @@
                                         <div class="main_menu d-none d-lg-block">
                                             <ul>
                                                 <li class=" active "><a href="index.html">الرئيسية</a></li>
-                                                <li class=""><a href="">معلومات عنا</a></li>
+                                                <li class=""><a href="about.html">معلومات عنا</a></li>
                                                 <li class=""><a href="">فروعنا</a></li>
                                                 <li class=""><a href="">حمل التطبيقات</a></li>
                                                 <li class=""><a href="">طرق الدفع</a></li>
@@ -228,18 +228,14 @@
                                                 <li class=""><a href="contact.html">تواصل معنا</a></li>
                                                 <li class="cart_link cart_menu" style="display:none">
                                                     <ul class="nav left-nav">
-                                                        <div id="addtocartmenue" data-pjax-container="" data-pjax-push-state="" data-pjax-timeout="1000">
-                                                            <li class="nav-item dropdown">
-                                                                <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                                                                    <img src="img/cartshop.png">
-                                                                    <!--<span class="d-none d-sm-block shoping-span">سلة التسوق</span>-->
-                                                                    <span class="cart_count">0</span>
+                                                        <a class="nav-link dropdown" href="cart.html">
+                                                            <img src="img/cartshop.png">
+                                                            <span class="cart_count">0</span>
 
-                                                                </a>
-                                                            </li>
-                                                        </div>
-                                                    </ul>
-                                                    <!--mini cart end-->
+                                                        </a>
+                                                </li>
+                                                </ul>
+                                                <!--mini cart end-->
                                                 </li>
                                             </ul>
 
@@ -382,7 +378,7 @@
                                 <ul>
                                     <li><a href="index.html">الرئيسية</a></li>
                                     <li> | </li>
-                                    <li>استعادة كلمة المرور</li>
+                                    <li>سلة التسوق</li>
                                 </ul>
                             </div>
                         </div>
@@ -391,43 +387,160 @@
             </div>
             <!-- End Section breadcrumb_content  -->
             <!-- =========================================================================================== -->
-            <!-- Start Reset Password section  -->
-            <div class="site-request-password-reset text-center container my-md-3 mt-3 mb-5">
-                <div class="container">
-                    <div class="consoles_product_title inner_title ">
-                        <h5 class="section_title float-right">استعادة كلمة المرور</h5>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-                <div class="row text-center">
-                    <div class="col-lg-5" style="float:none;margin:0 auto">
-                        <p class="text-justify mb-0">ادخل بريدك الالكتروني المسجل حتى نرسل لك رابط استعادة كلمة المرور </p>
-                        <form id="" action="" method="">
-                            <input type="hidden" name="" value="">
-                            <div class="form-group ">
-                                <div class="right-inner-addon">
-                                    <i class="fa fa-envelope-open-o" aria-hidden="true"></i>
-                                    <div class="form-group field-passwordresetrequestform-email required">
-                                        <input type="text" id="" class=" form-control login_form" name="" placeholder="البريد الالكتروني" aria-required="true">
 
-                                        <p class="help-block help-block-error"></p>
+            <!-- =========================================================================================== -->
+            <div class="container-fluid ">
+                <div class="row">
+                    <section class="w-100 my-4">
+                        <div class="wizard">
+                            <!-- ================================================== -->
+                            <ul class="nav nav-wizard d-none d-lg-flex">
+                                <li class="tab-header active ">
+                                    <div id="addtocart3" data-pjax-container="" data-pjax-push-state="" data-pjax-timeout="1000">
+                                        <a href="cart.html" data-method=""><span class="no">01</span>سلة التسوق</a> </div>
+                                </li>
+                                <li class="tab-header ">
+                                    <a href="checkout.html">
+                                        <span class="no">02</span> تفاصيل الفاتورة </a>
+                                </li>
+                                <li class="tab-header disabled">
+                                    <a href="checkout.html">
+                                        <span class="no">03</span> انهاء الطلب </a>
+                                </li>
+                            </ul>
+                            <!-- ================================================== -->
+                            <form>
+                                <div class="tab-content">
+                                    <div class="tab-pane active">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-md-8 col-12 ">
+                                                    <div id="addtocart2" data-pjax-container="" data-pjax-push-state="" data-pjax-timeout="1000">
+                                                        <div class="col-sm-12 ">
+                                                            <div class="row show_in_large d-none d-lg-flex border_bottom margin_top_30 text-center font_20">
+                                                                <div class="col-md-2"></div>
+                                                                <div class="col-md-3"></div>
+                                                                <div class="col-md-3">السعر</div>
+                                                                <div class="col-md-2">الكمية</div>
+                                                                <div class="col-md-2">الاجمالي</div>
+                                                            </div>
+                                                            <div class=" row border_bottom margin_top_30">
+                                                                <div class="col-md-2 col-3 no-padding">
+                                                                    <a href="display3qar.html"><img src="img/pic1.png"></a>
+                                                                </div>
+                                                                <div class="col-md-8 col-9 tex_align_right no-padding">
+                                                                    <div class="row">
+                                                                        <div class="col-8 col-md-5">
+                                                                            <a class="font_20" href="display3qar.html"> اسم العقار </a>
+                                                                            <div class="div-763">
+                                                                                <div class="included_tax">السعر شامل الضريبة</div>
+                                                                            </div>
+
+
+                                                                            <div class="btn trans-btn d-none d-lg-block show_in_large">
+                                                                                <i class="btn btn-danger delet_from_cart" onclick="removitem(356)">حذف من السلة</i>
+                                                                            </div>
+
+                                                                        </div>
+                                                                        <div class="col-4 col-md-3 font_20 no-padding">
+                                                                            <span class="price"> 39 SR</span>
+                                                                        </div>
+                                                                        <div class="col-4 col-md-4 text-center show_in_large d-lg-block d-none">
+                                                                            <div class="quantity buttons_added">
+                                                                                <input onclick="quantity_plus(356)" type="button" value="+" class="plus">
+                                                                                <input id="select_quantity356" type="text" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text text-center qty text quantityX356" size="4" pattern="" inputmode="">
+                                                                                <input onclick="quantity_minus(356)" type="button" value="-" class="minus">
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="font_20 show_in_small d-lg-none d-block">
+                                                                    <div class="row ">
+                                                                        <div class="col-8 col-md-12 text-center my-3">
+                                                                            <div class="quantity buttons_added">
+                                                                                <input onclick="quantity_plus(356)" type="button" value="+" class="plus">
+                                                                                <input id="select_quantity356" type="text" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text text-center qty text quantityX356" size="4" pattern="" inputmode="">
+                                                                                <input onclick="quantity_minus(356)" type="button" value="-" class="minus">
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="col-4  padding_5 text-center font_20">
+                                                                            39 SR
+                                                                        </div>
+                                                                        <div class="col-12  padding_5 text-center font_20 ">
+                                                                            <div class="btn trans-btn">
+                                                                                <i class="btn btn-danger delet_from_cart" onclick="removitem(356)">حذف من السلة</i>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-2 col-3  padding_5 text-center font_20 show_in_large d-lg-block d-none">
+                                                                    39 SR
+                                                                </div>
+
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+                                                    <!--<p class="muted text-center"><strong> وقت التوصيل : </strong>يومين </p>-->
+                                                </div>
+                                                <div class="col-md-4 col-12" style="margin-top: 15px;">
+                                                    <div id="addtocart4" data-pjax-container="" data-pjax-push-state="" data-pjax-timeout="1000">
+                                                        <div class="col-md-12">
+                                                            <div class="cart-total">
+                                                                <h4>إجمالي سلة التسوق</h4>
+                                                                <p>
+                                                                    <span class="bold">المجموع شامل الضريبة</span>
+                                                                    <span class="left-span">39 SR</span>
+                                                                </p>
+
+                                                                <p>
+                                                                    <span class="bold">المجموع باستثناء الضريبة</span>
+                                                                    <span class="left-span">33.15 SR</span>
+                                                                </p>
+
+                                                                <p>
+                                                                    <span class="bold">خدمة الشحن</span>
+                                                                    <span class="left-span">0 SR</span>
+                                                                </p>
+
+                                                                <p>
+                                                                    <span class="bold">ضريبة القيمة المضافة</span>
+                                                                    <span class="left-span">(15%) 5.85 SR</span>
+                                                                </p>
+                                                                <hr>
+                                                                <p>
+                                                                    <span class="bold">الاجمالي النهائي</span>
+                                                                    <span class="bold left-span">39 SR</span>
+                                                                </p>
+                                                                <a href="checkout.html" class="btn btn-dark black-btn">تابع عملية الشراء</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--<div class="col-md-12" style="margin-top: 30px;">
+                                                <div class="cobon-active">
+                                                    <h4>كبونات التخفيض</h4>
+                                                    <label>إدراج كوبونات التخفيض</label>
+                                                    <input type="text" class="form-control">
+                                                    <button type="button" class="btn btn-dark black-btn">تفعيل الكبون</button>
+                                                </div>
+                                            </div>-->
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
 
-                            <div class="form-group ">
-                                <a type="submit" class="d-block btn btn-primary red-btn" name="">إرسال</a>
-                            </div>
-                        </form>
-                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </section>
                 </div>
             </div>
-            <!-- End Reset Password Section -->
-
             <!-- =========================================================================================== -->
-
-            <!-- =========================================================================================== -->
-
+            <div class="div-50"></div>
             <!-- Start Footer  -->
 
             <!-- Desktop footer -->
@@ -602,6 +715,7 @@
             <!--        End Scroll To-Top  -->
             <!-- =========================================================================================== -->
 
+
         </div>
 
         <!--Start Dark Overlay element -->
@@ -609,7 +723,6 @@
         <!--End Dark Overlay element -->
 
     </div>
-
 
     <script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>

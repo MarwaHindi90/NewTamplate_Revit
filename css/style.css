@@ -104,6 +104,11 @@ h6 {
     display: block;
 }
 
+.btn {
+    border-radius: 0;
+    border: 0;
+}
+
 .div-100 {
     height: 100px;
     width: 100%;
@@ -118,6 +123,12 @@ h6 {
 
 .div-20 {
     height: 20px;
+    width: 100%;
+    display: block;
+}
+
+.div-15 {
+    height: 15px;
     width: 100%;
     display: block;
 }
@@ -1545,7 +1556,7 @@ a.cart-action-a {
 .footer .link-footer a {
     font-family: "DinNextMedium" !important;
     color: #000;
-    padding: 12px 5px;
+    padding: 12px 4px;
 }
 
 .services .small_padding {
@@ -1615,6 +1626,10 @@ a.cart-action-a {
     -moz-transform: translatey(-50%);
     -ms-transform: translatey(-50%);
     -o-transform: translatey(-50%);
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
 }
 
 .single_instagram:hover .instagram_icone {
@@ -1872,6 +1887,315 @@ a.cart-action-a {
 .has-error .help-block {
     color: red;
     font-size: 12px;
+}
+
+.display .fas {
+    color: var(--icons-color);
+}
+
+.rating-md {
+    font-size: 15px;
+}
+
+.rating-container .empty-stars {
+    color: #cccccc;
+}
+
+.rating-container .caption {
+    display: none !important;
+}
+
+.rating-container .star {
+    display: inline-block;
+    margin: 0 3px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.display .btn {
+    background-color: #000;
+    color: #FFF;
+    border: none;
+}
+
+.modal_action a:hover {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.title-hr {
+    border-bottom: 1px solid #ccc;
+    margin: 15px 0;
+    padding: 0;
+}
+
+.plus,
+.minus {
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 2px 13px;
+    cursor: pointer;
+}
+
+.statistics {
+    background: url(../img/parallax-image.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 400px;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.statistics .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .75);
+}
+
+.statistics .counter-box .number {
+    font-size: 3.2rem;
+    color: #FFF;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.statistics .counter-box span {
+    color: #FFF !important;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.account_name {
+    padding: 6px 20px;
+    border-bottom: 1px solid var(--main-color);
+    text-align: justify;
+}
+
+.login-user-menu a {
+    border-bottom: 1px solid #ccc;
+    padding: 6px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.login-user-menu {
+    width: 200px !important;
+    border-top: 3px solid var(--main-color);
+    transition: top .1s ease-in-out;
+    -webkit-transition: top .1s ease-in-out;
+    -moz-transition: top .1s ease-in-out;
+    -ms-transition: top .1s ease-in-out;
+    -o-transition: top .1s ease-in-out;
+}
+
+.setting .nav {
+    background-color: #fafafa;
+}
+
+.setting .nav-item {
+    padding: 15px 0;
+    border-bottom: 1px solid #8c8c8c;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link,
+.nav-pills .nav-link:hover {
+    background-color: var(--main-color);
+    color: #fff !important;
+}
+
+.setting .nav-pills .nav-link {
+    border-radius: 0;
+    text-align: center;
+    color: #000;
+}
+
+.row.relative_div {
+    border: 1px solid #ccc;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.star-ratings.start-ratings-main {
+    margin-top: 0;
+}
+
+.show_action_cart .action-icon li {
+    /* color: #fff; */
+    display: inline-flex;
+}
+
+.page-link {
+    color: #c3c3c3;
+    background-color: #f8f8f8;
+    border: 1px solid #c3c3c3;
+    margin-left: 5px;
+    border-radius: 15%;
+}
+
+.page-item.active .page-link,
+.page-link:hover,
+.page-link:focus {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+    color: #fff;
+    box-shadow: none;
+}
+
+.profile_title {
+    background: #f7f7f7;
+    padding: 15px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.status_0 {
+    background: #7fa205;
+    padding: 7px 22px;
+    color: #fff;
+    vertical-align: -webkit-baseline-middle;
+    min-width: 150px;
+    display: inline-block;
+}
+
+.red-btn-bg {
+    border: 1px solid #fff !important;
+    background-color: #bc8e43;
+}
+
+.order-title {
+    background: #f40000;
+    padding: 10px 15px;
+    color: #ffffff;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    height: 100px;
+}
+
+.width-60 {
+    width: 60%;
+}
+
+.address-block-header {
+    padding: 15px 30px;
+    border-bottom: 1px solid #7d7d7d;
+}
+
+.address-detailes {
+    background: #fafafa;
+}
+
+.tab-header.active {
+    border: 1px solid var(--background-color);
+}
+
+.tab-header {
+    width: 30%;
+    text-align: center;
+    border: 1px solid #cccccc;
+    padding-top: 10px;
+    margin-left: 20px;
+    padding-bottom: 10px;
+    margin-right: 15px;
+}
+
+.margin_top_30 {
+    margin-top: 30px;
+}
+
+.border_bottom {
+    border-bottom: 1px solid #ccc;
+    padding: 0 0 7px 0;
+}
+
+.cart-total {
+    text-align: center;
+    border: 1px solid #cccccc;
+    padding: 20px;
+}
+
+.cart-total h4,
+.cobon-active h4 {
+    margin-bottom: 20px;
+}
+
+.cart-total p,
+.cart-total h4 {
+    text-align: right;
+}
+
+.bold {
+    font-weight: bold;
+    font-family: 'DinNextBold';
+}
+
+.left-span {
+    float: left;
+}
+
+.purchase-det .border_warp {
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+
+.login-btn {
+    background: var(--main-color);
+    display: block;
+    margin: 0 auto;
+    padding: 17px 20px;
+    border-radius: 7px;
+    min-width: 250px;
+    float: none;
+    border: none;
+}
+
+.purchase-det #collapseOne p {
+    background: #eb1c24b8;
+    border: 1px dashed #fff;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.card .collapsed {
+    background: #fff !important;
+    color: #000;
+}
+
+.card .collapsed label {
+    color: #000 !important;
+}
+
+.purchase-det .form-check-label {
+    margin-right: 20px;
+    color: #333333;
+}
+
+.payment-ul li {
+    display: inline-block;
+    margin-right: 5px;
+    margin: 0;
+    padding: 0 5px;
+}
+
+.delet_from_cart {
+    background: #fff;
+    color: #ef1e1e;
+    border: 2px solid red;
+    border-radius: 7px;
+    display: inline-block;
+    font-style: normal;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #000000;
+    border-color: #000000;
 }
 
 

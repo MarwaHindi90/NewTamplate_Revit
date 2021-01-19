@@ -21,6 +21,7 @@
     <!-- My css style -->
 
     <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/star-rating.min.css">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/media.css" />
     <!-- <link rel="stylesheet" href="css/style_E.css" />
@@ -30,6 +31,7 @@
 </head>
 
 <body>
+
     <div class="d-flex" id="wrapper">
         <div id="sideBar-wraper">
             <div class="closse" id="dismiss">
@@ -79,6 +81,7 @@
             </nav>
 
         </div>
+
         <!-- =========================================================================================== -->
         <!-- Start Main Content page -->
         <div id="mainContent-wraper">
@@ -228,18 +231,14 @@
                                                 <li class=""><a href="contact.html">تواصل معنا</a></li>
                                                 <li class="cart_link cart_menu" style="display:none">
                                                     <ul class="nav left-nav">
-                                                        <div id="addtocartmenue" data-pjax-container="" data-pjax-push-state="" data-pjax-timeout="1000">
-                                                            <li class="nav-item dropdown">
-                                                                <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                                                                    <img src="img/cartshop.png">
-                                                                    <!--<span class="d-none d-sm-block shoping-span">سلة التسوق</span>-->
-                                                                    <span class="cart_count">0</span>
+                                                        <a class="nav-link dropdown" href="cart.html">
+                                                            <img src="img/cartshop.png">
+                                                            <span class="cart_count">0</span>
 
-                                                                </a>
-                                                            </li>
-                                                        </div>
-                                                    </ul>
-                                                    <!--mini cart end-->
+                                                        </a>
+                                                </li>
+                                                </ul>
+                                                <!--mini cart end-->
                                                 </li>
                                             </ul>
 
@@ -371,7 +370,6 @@
             <!-- End Navbar  -->
 
             <!-- =========================================================================================== -->
-
             <!-- Start Section breadcrumb_content  -->
             <div class="d-lg-none d-block div-20"></div>
             <div class="container-fluid border_bottom border-top">
@@ -382,7 +380,7 @@
                                 <ul>
                                     <li><a href="index.html">الرئيسية</a></li>
                                     <li> | </li>
-                                    <li>استعادة كلمة المرور</li>
+                                    <li>أسم المنتج</li>
                                 </ul>
                             </div>
                         </div>
@@ -391,42 +389,147 @@
             </div>
             <!-- End Section breadcrumb_content  -->
             <!-- =========================================================================================== -->
-            <!-- Start Reset Password section  -->
-            <div class="site-request-password-reset text-center container my-md-3 mt-3 mb-5">
+            <section class="display my-md-5 my-3">
                 <div class="container">
-                    <div class="consoles_product_title inner_title ">
-                        <h5 class="section_title float-right">استعادة كلمة المرور</h5>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-                <div class="row text-center">
-                    <div class="col-lg-5" style="float:none;margin:0 auto">
-                        <p class="text-justify mb-0">ادخل بريدك الالكتروني المسجل حتى نرسل لك رابط استعادة كلمة المرور </p>
-                        <form id="" action="" method="">
-                            <input type="hidden" name="" value="">
-                            <div class="form-group ">
-                                <div class="right-inner-addon">
-                                    <i class="fa fa-envelope-open-o" aria-hidden="true"></i>
-                                    <div class="form-group field-passwordresetrequestform-email required">
-                                        <input type="text" id="" class=" form-control login_form" name="" placeholder="البريد الالكتروني" aria-required="true">
+                    <div class="row">
+                        <div class="col-md-5 my-md-5 mt-3">
+                            <div class="owl-carousel display_3qar-carousel mb-md-2 mb-3" data-slider-id="1">
+                                <div data-thumb=""><img src="img/pic4.png" alt=""></div>
+                                <div data-thumb=""><img src="img/pic2.png" alt=""></div>
+                                <div data-thumb=""><img src="img/pic3.png" alt=""></div>
+                                <div data-thumb=""><img src="img/pic1.png" alt=""></div>
 
-                                        <p class="help-block help-block-error"></p>
-                                    </div>
+                            </div>
+                            <div class="owl-thumbs text-center" data-slider-id="1">
+                                <button class="owl-thumb-item"><img src="img/pic4.png" alt=""></button>
+                                <button class="owl-thumb-item"><img src="img/pic2.png" alt=""></button>
+                                <button class="owl-thumb-item"><img src="img/pic3.png" alt=""></button>
+                                <button class="owl-thumb-item"><img src="img/pic1.png" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="col-md-7 mt-md-5 ">
+
+                            <h5 class="mt-3">اسم العقار</h5>
+                            <div class="star-ratings start-ratings-main float-left w-100">
+                                <div class="rating-container rating-md rating-animate rating-disabled">
+                                    <div class="clear-rating " title="Clear"><i class="glyphicon glyphicon-minus-sign"></i></div>
+                                    <div class="rating-stars"><span class="empty-stars"><span class="star"><i class="fas fa-star"></i></span><span class="star"><i class="fas fa-star"></i></span><span class="star"><i class="fas fa-star"></i></span><span class="star"><i class="fas fa-star"></i></span>
+                                        <span class="star"><i class="fas fa-star"></i></span>
+                                        </span><span class="filled-stars" style="width: 0%;"><span class="star"><i class="fas fa-star"></i></span><span class="star"><i class="fas fa-star"></i></span><span class="star"><i class="fas fa-star"></i></span>
+                                        <span class="star"><i class="fas fa-star"></i></span><span class="star"><i class="fas fa-star"></i></span></span><input type="text" class="rating rating5 rating-input" id="input-id330" value="0" disabled="disabled"></div>
+                                    <div class="caption"><span class="label label-default">Not Rated</span></div>
                                 </div>
                             </div>
+                            <span class="price"><strong>100 ريال</strong></span>
 
-                            <div class="form-group ">
-                                <a type="submit" class="d-block btn btn-primary red-btn" name="">إرسال</a>
+                            <div class="taxs">
+                                <div>السعر شامل الضريبة</div>
                             </div>
-                        </form>
+                            <hr>
+
+                            <form id="" action="" method="">
+
+                                <div class="form-group row">
+                                    <label class="col-sm-3 col-4 col-form-label">الكمية</label>
+                                    <div class="col-sm-9 col-8">
+                                        <div class="quantity buttons_added">
+                                            <input type="button" value="+" class="plus">
+                                            <input id="" type="text" name="quantity" value="1" class="input-text text-center qty text " size="4">
+                                            <input type="button" value="-" class="minus">
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <p>
+                                    <h6><strong>معلومات العقار</strong></h6>
+                                    اسم العقار داخل المتجر
+                                </p>
+                                <hr>
+                                <div class="action-buttons modal_action relative ">
+
+                                    <a type="submit" class="btn btn-primary contact-btn fav_addtocart"><img class="add_to_cart_img" src="img/add-bagwhite.png" width="20">اضف للسلة</a>
+                                    <a href="#" class="btn btn-primary contact-btn fav_addtocart">
+                                        <img class="add_to_cart_img" src="img/heart-white.png" width="20">
+                                        <!-- <span class="custom_height2">اضافة الى المفضلة</span> -->
+                                    </a>
+
+                                </div>
+                            </form>
+
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="pro-desc-div mb-4">
+                                <div class="title">
+                                    <h4 class="position-relative head-fonts text-uppercase underline mb-3">الوصف <span class="title-sperator">|</span>
+                                        <span class="add-info">معلومات اضافية</span>
+                                    </h4>
+
+                                </div>
+                                <p class="pro-desc-p mb-4">
+                                    حقيبة شتوية مكونة من : -بجامة رجالية شتوية -لفاف شتوي -قفاز يد شتوي -شراب شتوي -قبعة شتوية </p>
+                            </div>
+                            <div class="title">
+                                <h4 class="position-relative head-fonts text-uppercase underline mb-3">قيّم هذا المنتج</h4>
+                            </div>
+                            <div class="col-sm-12 comment_rate_form  padding_10">
+                                <form id="rate" action="/product/rate" method="post">
+                                    <input type="hidden" name="_csrf-frontend" value="p5IDCydWe9zv0I8cjUXeHL92QKAuddBP6h1zzUCflrDD_k4-QGI0tI2nv1DsDrJR5TwP1mdMgwDeWhurENXG5g==">
+                                    <div class="form-group field-rate-rate required">
+
+                                        <div class="rating-container rating-xs rating-animate">
+                                            <div class="clear-rating clear-rating-active" title="Clear"><i class="glyphicon glyphicon-minus-sign"></i></div>
+                                            <div class="rating-stars"><span class="empty-stars"><span class="star"><i class="fas fa-star"></i></span><span class="star"><i class="fas fa-star"></i></span><span class="star"><i class="fas fa-star"></i></span><span class="star"><i class="fas fa-star"></i></span>
+                                                <span class="star"><i class="fas fa-star"></i></span>
+                                                </span><span class="filled-stars" style="width: 0%;"><span class="star"><i class="fas fa-star"></i></span><span class="star"><i class="fas fa-star"></i></span><span class="star"><i class="fas fa-star"></i></span>
+                                                <span class="star"><i class="fas fa-star"></i></span><span class="star"><i class="fas fa-star"></i></span></span><input type="text" id="rate-rate" class="rating rating-input" name="Rate[rate]" data-size="xs"
+                                                    aria-required="true"></div>
+                                            <div class="caption"><span class="label label-default">Not Rated</span></div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-6 offset-md-3 col-12 mt-4 text-center mx-auto">
+                                        <a type="submit" class="d-block btn btn-primary dark-btn" name="">قيّم هذا المنتج</a>
+                                    </div>
+
+                                </form>
+                            </div>
+                            <hr>
+                            <div class="col-sm-12  padding_10">
+
+                                <form id="comment" action="" method="">
+
+                                    <div class="title">
+                                        <h4>اضف تعليقك </h4>
+                                        <hr class="title-hr">
+                                    </div>
+                                    <div class="form-group  required">
+                                        <label class="control-label" for="comment-name">الاسم</label>
+                                        <input type="text" id="comment-name" class="form-control" name="" value="Username" disabled="disabled" aria-required="true">
+                                    </div>
+
+                                    <div class="form-group required">
+                                        <label class="control-label" for="comment-comment">التعليق</label>
+                                        <textarea id="comment-comment" class="form-control" name="" rows="6" aria-required="true"></textarea>
+                                    </div>
+
+                                    <div class="col-md-6 offset-md-3 col-12 mt-4 text-center mx-auto">
+                                        <a type="submit" class="d-block btn btn-primary dark-btn" name="">إضافة تعليق</a>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- End Reset Password Section -->
+                <div class="div-50 d-md-none d-block"></div>
+            </section>
 
             <!-- =========================================================================================== -->
 
-            <!-- =========================================================================================== -->
 
             <!-- Start Footer  -->
 
@@ -602,6 +705,7 @@
             <!--        End Scroll To-Top  -->
             <!-- =========================================================================================== -->
 
+
         </div>
 
         <!--Start Dark Overlay element -->
@@ -610,15 +714,15 @@
 
     </div>
 
-
-    <script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/owl.carousel2.thumbs.min.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/jquery.counterup.min.js"></script>
     <script src="js/main.js"></script>
+
 
 
 </body>

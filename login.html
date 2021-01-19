@@ -147,7 +147,15 @@
                                 <div class="col-lg-4 col-md-3 col-7">
                                     <div class="cart_area">
                                         <div class="wishlist_link">
-                                            <a href="login.html"><img class="show_in_large" src="img/menu.png" width="30"> <img src="img/account.png" width="30"></a>
+                                            <a class=" toggle" href="login.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="show_in_large" src="img/menu.png" width="30"> <img src="img/account.png" width="30"></a>
+                                            <div class="dropdown-menu login-user-menu" aria-labelledby="navbarDropdown">
+                                                <div class="account_name"> Username</div>
+                                                <a class="dropdown-item" href="acountsetting.html">الملف الشخصي</a>
+                                                <a class="dropdown-item" href="order.html">مشترياتي</a>
+                                                <a class="dropdown-item" href="favorite.html">قائمة المفضلة</a>
+
+                                                <a class="dropdown-item border-0" href="logout.html" data-method="post">تسجيل الخروج</a>
+                                            </div>
                                         </div>
                                         <div class="fav_link show_in_large">
                                             <a href="favorite.html"> <img src="img/favorit.png"></a>
@@ -198,10 +206,7 @@
                                                 </li>
 
                                             </ul>
-                                            <!--mini cart end-->
 
-                                            <!--mini cart-->
-                                            <!--mini cart end-->
                                         </div>
 
                                     </div>
@@ -337,7 +342,7 @@
                         </div>
                     </div>
                 </header>
-                <div class="d-md-none d-block div-80"></div>
+                <div class="d-lg-none d-block div-80"></div>
                 <!--header area end-->
                 <!-- ===================================================== -->
 
