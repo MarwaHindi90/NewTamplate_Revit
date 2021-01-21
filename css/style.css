@@ -107,6 +107,7 @@ h6 {
 .btn {
     border-radius: 0;
     border: 0;
+    background: #000;
 }
 
 .div-100 {
@@ -1113,7 +1114,7 @@ a.cart-action-a {
 
 .single_product img {
     max-width: auto;
-    height: 145px;
+    /* height: 145px; */
     width: 100%;
 }
 
@@ -1343,7 +1344,7 @@ a.cart-action-a {
     visibility: visible;
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
-    background: var(--second-color);
+    background: var(--background-color);
     color: #fff;
 }
 
@@ -1376,17 +1377,11 @@ a.cart-action-a {
 .services .btn {
     background-color: #000;
     color: #FFF;
-    border: none
+    /* border: none */
 }
 
 
 /*product area css end*/
-
-
-/* .filter_img {
-    filter: brightness(0);
-    -webkit-filter: brightness(0);
-} */
 
 .single_footer {
     margin-top: 25px;
@@ -1559,7 +1554,7 @@ a.cart-action-a {
     padding: 12px 4px;
 }
 
-.services .small_padding {
+.small_padding {
     padding: 0 3px;
 }
 
@@ -2078,6 +2073,23 @@ a.cart-action-a {
     height: 100px;
 }
 
+.oder_title span {
+    float: left;
+    font-size: 45px;
+    position: absolute;
+    left: 8px;
+    top: 2px;
+    background: #fff;
+    border-radius: 50%;
+    color: var(--background-color);
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    line-height: 27px;
+    text-align: center;
+    display: block !important;
+}
+
 .width-60 {
     width: 60%;
 }
@@ -2196,6 +2208,157 @@ a.cart-action-a {
     color: #fff;
     background-color: #000000;
     border-color: #000000;
+}
+
+.inner_title_product h5 {
+    border-bottom: 2px solid var(--background-color);
+    padding-bottom: 17px;
+    margin-bottom: -2px;
+}
+
+.widget_list ul {
+    border: none;
+}
+
+.widget_list ul li {
+    border-bottom: 1px solid #ccc;
+    padding: 4px 0 9px 0;
+}
+
+.form-check-label {
+    padding-right: 20px;
+}
+
+.widget_list {
+    margin-bottom: 31px;
+}
+
+.widget_list:last-child {
+    margin-bottom: 0;
+}
+
+.inner_title_product {
+    width: 100%;
+    /* border-bottom: 2px solid #ccc; */
+    margin-bottom: 15px;
+    display: flex;
+}
+
+.shop_toolbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 20px 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.shop_toolbar select {
+    max-width: 100px;
+    display: inline-block;
+}
+
+.shop_toolbar .number select {
+    max-width: 55px;
+    display: inline-block;
+}
+
+.list_button ul li a {
+    width: 40px;
+    height: 40px;
+    color: #9a9696;
+    font-weight: normal;
+    font-size: 20px;
+    background: #ddd;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 10px;
+    display: block;
+    border-radius: 3px;
+}
+
+.list_button ul li a:hover,
+.list_button ul li a.active {
+    background: var(--background-color);
+    color: #fff;
+}
+
+.contact-btn {
+    color: #fff;
+    background-color: var(--background-color);
+    border-color: var(--background-color);
+    padding: 5px 71px !important;
+    border-radius: 24px;
+    margin: 20px auto;
+    display: block;
+    cursor: pointer;
+}
+
+.search_page li {
+    display: inline-block;
+    padding: 7px 10px;
+    margin: 0 10px;
+    color: var(--background-color);
+    border-radius: 10px;
+    border: 1px solid var(--background-color);
+}
+
+.search_page li a {
+    color: var(--background-color);
+}
+
+.search_page li.active a {
+    color: #fff;
+}
+
+.search_page li.active {
+    display: inline-block;
+    padding: 7px 10px;
+    background: var(--background-color);
+    margin: 0 10px;
+    color: #fff;
+    border-radius: 10px;
+    border: 1px solid var(--background-color);
+}
+
+.margin_20 {
+    margin: 10px 0;
+}
+
+.app_download a {
+    margin: 15px;
+    overflow: hidden;
+    clear: both;
+    display: table;
+}
+
+.pay img {
+    margin-left: 29px;
+    margin-bottom: 15px;
+}
+
+.pay h2 {
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+}
+
+.pay p {
+    text-align: right !important;
+}
+
+#accordion {
+    width: 100%;
+}
+
+.margin_top_10 {
+    margin-bottom: 10px;
 }
 
 

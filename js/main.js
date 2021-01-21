@@ -141,17 +141,44 @@ $(document).ready(function() {
     });
 
 
+    $(".show_filter").click(function() {
+        $(".sidebar_widget").css('right', '0');
+        if ($('.sidebar_widget').hasClass('showed-btn')) {
+            $('.sidebar_widget').css('right', '0');
+            $('.sidebar_widget').removeClass('showed-btn');
+        } else {
+            $('.sidebar_widget').addClass('showed-btn');
+            $('.sidebar_widget').css('right', '-300px');
+        }
+    });
 
-    // upload files
-    let realFile = document.getElementById('real-file');
-    let customFile = document.getElementById('custom-upload');
-    if (realFile) {
-        customFile.addEventListener('click', function() {
-            realFile.click()
-        });
-    }
+    $(".clos_filter").click(function() {
+        $(".sidebar_widget").css('right', '0');
+        if ($('.sidebar_widget').hasClass('showed-btn')) {
+            $('.sidebar_widget').css('right', '0');
+            $('.sidebar_widget').removeClass('showed-btn');
+        } else {
+            $('.sidebar_widget').addClass('showed-btn');
+            $('.sidebar_widget').css('right', '-300px');
+        }
+    });
+    $('.show_sort').on('click', function() {
+        if ($('.order_filter').hasClass('show_order')) {
+            $('.order_filter').css('bottom', '-20px');
+            $('.order_filter').removeClass('show_order');
+        } else {
+            $('.order_filter').addClass('show_order');
+            $('.order_filter').css('bottom', '-300px');
+        }
+    });
 
-    $(function() {
-        $('[data-toggle="tooltip"]').tooltip()
-    })
+    $('.clos_order').on('click', function() {
+        if ($('.order_filter').hasClass('show_order')) {
+            $('.order_filter').css('bottom', '-20px');
+            $('.order_filter').removeClass('show_order');
+        } else {
+            $('.order_filter').addClass('show_order');
+            $('.order_filter').css('bottom', '-300px');
+        }
+    });
 });

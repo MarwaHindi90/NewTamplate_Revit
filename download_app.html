@@ -23,12 +23,13 @@
     <link rel="icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/media.css" />
+    <!-- <link rel="stylesheet" href="css/style_E.css" />
+    <link rel="stylesheet" href="css/media_E.css" /> -->
 
 
 </head>
 
 <body>
-
     <div class="d-flex" id="wrapper">
         <div id="sideBar-wraper">
             <div class="closse" id="dismiss">
@@ -71,9 +72,9 @@
                         <a class="nav-link" href="logout.html">تسجيل الخروج</a>
                     </li>
 
-                    <!-- <li class="nav-item dropdown">
-                        <a class="nav-link no-border nohover  " href="cart.html"><img src="img/cartshop.png" alt=""><span class="cart_count">0</span></a>
-                    </li> -->
+                    <li class="nav-item noh">
+                        <a class="nav-link no-border nohover" href="cart.html"><img src="img/icon-shopping-cart.png" alt=""><span class="item-no">0</span></a>
+                    </li>
                 </ul>
             </nav>
 
@@ -226,7 +227,7 @@
                                                 <li class=" active "><a href="index.html">الرئيسية</a></li>
                                                 <li class=""><a href="about.html">معلومات عنا</a></li>
                                                 <li class=""><a href="branch.html">فروعنا</a></li>
-                                                <li class=""><a href="download_app.html">حمل التطبيقات</a></li>
+                                                <li class=""><a href="">حمل التطبيقات</a></li>
                                                 <li class=""><a href="">طرق الدفع</a></li>
                                                 <li class=""><a href="">مركز المساعدة</a></li>
                                                 <li class=""><a href="contact.html">تواصل معنا</a></li>
@@ -386,7 +387,7 @@
                                 <ul>
                                     <li><a href="index.html">الرئيسية</a></li>
                                     <li> | </li>
-                                    <li>اعدادات الحساب</li>
+                                    <li>حمل التطبيقات </li>
                                 </ul>
                             </div>
                         </div>
@@ -395,98 +396,45 @@
             </div>
             <!-- End Section breadcrumb_content  -->
             <!-- =========================================================================================== -->
-            <div class="container">
-                <div class="consoles_product_title inner_title ">
-                    <h5 class="section_title float-right"> اعدادات الحساب </h5>
-                    <div class="clearfix"></div>
-                </div>
-            </div>
-            <!-- =========================================================================================== -->
-            <section class="setting my-md-5 my-3">
+
+
+            <section class="login-sec my-md-3 mt-3">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-3 d-none d-md-block mb-3">
+                    <div class="row mb-40 ">
+                        <div class="col-lg-6">
 
-                            <ul class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                <li class="nav-item " role="presentation">
-                                    <a class="nav-link active" id="acount-tab" href="acountsetting.html" role="tab" aria-controls="acount" aria-selected="true">إعدادات الحساب</a>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <a class="nav-link" id="messages-tab" href="order.html" role="tab" aria-controls="messages" aria-selected="false">مشترياتي</a>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <a class="nav-link" id="favorite-tab" href="favorite.html" role="tab" aria-controls="favorite" aria-selected="false">المفضلة</a>
-                                </li>
-                                <li class="nav-item no-border" role="presentation">
-                                    <a class="nav-link " id="settings-tab" href="logout.html" role="tab" aria-controls="settings" aria-selected="false">تسجيل الخروج</a>
-                                </li>
-                            </ul>
-
-                        </div>
-
-                        <div class="col-md-9 col-sm-7 clearfix">
-                            <!-- Acount-page setting  -->
-                            <div class="tab-pane active" id="acount" role="tabpanel" aria-labelledby="acount-tab">
-
-                                <div class="container frm">
-                                    <form id="" action="" method="" role="">
-
-                                        <div class="form-group mb-4">
-                                            <label class="control-label" for="username">الاسم بالكامل</label>
-                                            <input type="text" id="username" class="form-control" name="" aria-required="true" placeholder="الاسم بالكامل">
-                                        </div>
-
-                                        <div class="form-group mb-4 ">
-                                            <label class="control-label" for="mobile">رقم الهاتف</label>
-                                            <div class="input-group mb-3">
-                                                <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="رقم الهاتف">
-                                                <div class="input-group-prepend">
-                                                    <button class="btn btn-light border dropdown-toggle form-control text-center" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" dir="ltr"><img src="img/eg.png" alt="" class="mr-2" width="30"> +2</button>
-                                                    <div class="dropdown-menu">
-                                                        <a class="dropdown-item" href="#"><img src="img/eg.png" alt="" class="mr-2" width="30"> +2</a>
-                                                        <a class="dropdown-item" href="#"><img src="img/eg.png" alt="" class="mr-2" width="30"> +2 </a>
-                                                        <a class="dropdown-item" href="#"> <img src="img/eg.png" alt="" class="mr-2" width="30"> +2</a>
-
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group mb-4">
-                                            <label class="control-label" for="email">البريد الالكتروني</label>
-                                            <input type="text" id="email" class="form-control" name="" aria-required="true" placeholder="البريد الالكتروني">
-                                        </div>
-
-                                        <div class="form-group mb-4">
-                                            <label class="control-label" for="password">كلمة المرور</label>
-                                            <input type="password" id="password" class="form-control" name="" aria-required="true" placeholder="كلمة المرور">
-                                        </div>
-
-                                        <div class="form-group mb-4">
-                                            <label class="control-label" for="password-repeat">تأكيد كلمة المرور</label>
-                                            <input type="password" id="password-repeat" class=" form-control login_form" name="" aria-required="true" placeholder="تأكيد كلمة المرور">
-                                        </div>
-
-                                        <div class="form-group mb-4">
-                                            <label class="control-label" for="ad-details">العنوان</label>
-                                            <textarea id="ad-details" class="form-control" name="" rows="6" placeholder="العنوان بالكامل" aria-required="true"></textarea>
-                                        </div>
-
-                                        <div class="col-md-6 offset-md-3 col-12 mt-4 text-center mx-auto">
-                                            <a type="submit" class="d-block btn btn-primary dark-btn" name="">حفظ البيانات</a>
-                                        </div>
-
-                                    </form>
+                            <div class="consoles_product_title inner_title branch_title">
+                                <h2 class="section_title margin_top_20 float-right"> حمل التطبيق الآن </h2>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="iner_page_p">
+                                <p>تطبيق مصمم بطريقة جميلة وبسيطة للغاية، متخصص في محتوى قطع الغيار الاصلية لسيارات مرسيدس و بي ام دبليو والشاحنات.</p>
+                            </div>
+                            <div class="row">
+                                <div class="fotter_margin app_download">
+                                    <a href="#" target="_blank"><img src="img/store.png" width="130" class="pull-left"></a>
                                 </div>
-
+                                <div class="fotter_margin app_download">
+                                    <a href="#" target="_blank"><img src="img/play.png" width="130"></a>
+                                </div>
                             </div>
 
                         </div>
+
+                        <div class="col-lg-6 col-md-10">
+
+                            <img src="img/phone.jpg">
+
+                        </div>
+
                     </div>
                 </div>
-                <div class="div-50"></div>
+
             </section>
+
+
+            <!-- =========================================================================================== -->
+
             <!-- =========================================================================================== -->
 
             <!-- Start Footer  -->
@@ -560,7 +508,7 @@
                                         <li class=""><a href="">حمل التطبيقات</a></li>
                                         <li class=""><a href="">طرق الدفع</a></li>
                                         <li class=""><a href="">مركز المساعدة</a></li>
-                                        <li class=""><a href="contact.html">تواصل معنا</a></li>
+                                        <li class=""><a href="">تواصل معنا</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -663,7 +611,6 @@
             <!--        End Scroll To-Top  -->
             <!-- =========================================================================================== -->
 
-
         </div>
 
         <!--Start Dark Overlay element -->
@@ -671,6 +618,7 @@
         <!--End Dark Overlay element -->
 
     </div>
+
 
     <script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>

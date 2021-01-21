@@ -77,9 +77,9 @@
                         <a class="nav-link" href="logout.html">تسجيل الخروج</a>
                     </li>
 
-                    <li class="nav-item noh">
-                        <a class="nav-link no-border nohover" href="cart.html"><img src="img/icon-shopping-cart.png" alt=""><span class="item-no">0</span></a>
-                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link no-border nohover  " href="cart.html"><img src="img/cartshop.png" alt=""><span class="cart_count">0</span></a>
+                    </li> -->
                 </ul>
             </nav>
 
@@ -225,26 +225,22 @@
                                         <div class="main_menu d-none d-lg-block">
                                             <ul>
                                                 <li class=" active "><a href="index.html">الرئيسية</a></li>
-                                                <li class=""><a href="">معلومات عنا</a></li>
-                                                <li class=""><a href="">فروعنا</a></li>
+                                                <li class=""><a href="about.html">معلومات عنا</a></li>
+                                                <li class=""><a href="branch.html">فروعنا</a></li>
                                                 <li class=""><a href="">حمل التطبيقات</a></li>
                                                 <li class=""><a href="">طرق الدفع</a></li>
                                                 <li class=""><a href="">مركز المساعدة</a></li>
                                                 <li class=""><a href="contact.html">تواصل معنا</a></li>
                                                 <li class="cart_link cart_menu" style="display:none">
                                                     <ul class="nav left-nav">
-                                                        <div id="addtocartmenue" data-pjax-container="" data-pjax-push-state="" data-pjax-timeout="1000">
-                                                            <li class="nav-item dropdown">
-                                                                <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                                                                    <img src="img/cartshop.png">
-                                                                    <!--<span class="d-none d-sm-block shoping-span">سلة التسوق</span>-->
-                                                                    <span class="cart_count">0</span>
+                                                        <a class="nav-link dropdown" href="cart.html">
+                                                            <img src="img/cartshop.png">
+                                                            <span class="cart_count">0</span>
 
-                                                                </a>
-                                                            </li>
-                                                        </div>
-                                                    </ul>
-                                                    <!--mini cart end-->
+                                                        </a>
+                                                </li>
+                                                </ul>
+                                                <!--mini cart end-->
                                                 </li>
                                             </ul>
 
@@ -375,1129 +371,630 @@
             </div>
             <!-- End Navbar  -->
             <!-- =========================================================================================== -->
-            <!-- Start Slider -->
-            <section class="slider position-relative">
 
-                <div class="slider-carousel owl-carousel owl-theme">
-                    <div class="item ">
-                        <img class="" src="img/slider1.png" alt="">
-
-                        <!-- <div class="container align-content-center justify-content-center d-flex text-white">
-                            <div class="info text-center">
-                                <h1 class="text-white text-center mb-3">أبحث عن عقارك</h1>
-                                <p class="text-white text-center">يمكنك البحث عن عقارك شراء أو ايجار ويمكنك أضافة عقارك للبيع</p>
-
-                            </div>
-                        </div> -->
-
-
-                    </div>
-                    <div class="item position-relative">
-
-                        <img class="img-fluid" src="img/slider2.png" alt="">
-                        <!-- <div class="container align-content-center justify-content-center d-flex text-white">
-                            <div class="info text-center">
-                                <h1 class="text-white text-center mb-3">أبحث عن عقارك</h1>
-                                <p class="text-white text-center mb-md-5">يمكنك البحث عن عقارك شراء أو ايجار ويمكنك أضافة عقارك للبيع</p>
-
-
-
-                            </div>
-                        </div> -->
-                    </div>
-                    <div class="item position-relative">
-
-                        <img class="img-fluid" src="img/slider3.png" alt="">
-                        <!-- <div class="container align-content-center justify-content-center d-flex text-white">
-                            <div class="info text-center">
-                                <h1 class="text-white text-center mb-3">أبحث عن عقارك</h1>
-                                <p class="text-white text-center mb-md-5">يمكنك البحث عن عقارك شراء أو ايجار ويمكنك أضافة عقارك للبيع</p>
-
-
-                            </div>
-                        </div> -->
-                    </div>
-
-                </div>
-            </section>
-
-            <!-- End Slider -->
-            <!-- =========================================================================================== -->
-
-            <!-- =========================================================================================== -->
-            <!-- Start Section Best_seller  -->
-            <section class="services my-md-5 ">
-                <div class="consoles_product">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="consoles_header_title ">
-                                    <div class="consoles_product_title">
-                                        <h2 class="section_title margin_top_20 float-right"> تسوق معنا </h2>
-                                        <div class="float-left more_section_title "><a class="font-weight-bold" href="">عرض المزيد</a></div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="container">
-                            <div class="product_tab_button">
-                                <ul class="nav" role="tablist">
-                                    <li>
-                                        <a class="active" data-toggle="tab" href="#all" role="tab" aria-controls="Gamepads" aria-selected="true"> الكل</a>
-                                    </li>
-                                    <li>
-                                        <a class="" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">فلل</a>
-                                    </li>
-                                    <li>
-                                        <a class="" data-toggle="tab" href="#tab4" role="tab" aria-controls="tab4" aria-selected="true">عمارات</a>
-                                    </li>
-                                    <li>
-                                        <a class="" data-toggle="tab" href="#tab6" role="tab" aria-controls="tab6" aria-selected="true">ديكورات</a>
-                                    </li>
-                                    <li>
-                                        <a class="" data-toggle="tab" href="#tab8" role="tab" aria-controls="tab8" aria-selected="true"> تصميمات</a>
-                                    </li>
+            <!-- Start Section breadcrumb_content  -->
+            <div class="d-lg-none d-block div-15"></div>
+            <div class="cat_filter d-lg-none d-block">
+                <span class="show_filter"> فرز  <img src="img/icon-filter.png"> </span>
+                <span class="show_sort"> ترتيب <img src="img/icon-sort.png"> </span>
+            </div>
+            <div class="container-fluid border_bottom border-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="breadcrumb_content2">
+                                <ul>
+                                    <li><a href="index.html">الرئيسية</a></li>
+                                    <li> | </li>
+                                    <li>الأقسام</li>
                                 </ul>
                             </div>
-                            <div class="row">
-                                <div class="col-lg-12 col-md-12 prod">
-                                    <div class="tab-content">
-                                        <div class="tab-pane fade show active" id="all" role="all">
-                                            <div class="row">
-                                                <div class="col-lg-3 col-6 small_padding">
-                                                    <div class="single_product">
-                                                        <div class="product_thumb">
-                                                            <span class="dis_new">جديد</span>
-                                                            <a href=""><img src="img/villa2.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="product_content">
-                                                            <div class="product_ratting float-left">
-                                                                <span> 1.00 <i class="far fa-star"></i> </span>
-                                                            </div>
-                                                            <h3><a href="">اسم العقار</a></h3>
-                                                            <div class="clearfix"></div>
-                                                            <div class="product_price">
-                                                                <span class="current_price"> SAR 55</span>
-                                                            </div>
-                                                            <p>السعر شامل الضريبة</p>
-                                                            <div class="product_action">
-                                                                <ul>
-                                                                    <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
-                                                                    <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-6 small_padding">
-                                                    <div class="single_product">
-                                                        <div class="product_thumb">
-                                                            <span class="dis_new">جديد</span>
-                                                            <a href=""><img src="img/villa3.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="product_content">
-                                                            <div class="product_ratting float-left">
-                                                                <span> 1.00 <i class="far fa-star"></i> </span>
-                                                            </div>
-                                                            <h3><a href="">اسم العقار</a></h3>
-                                                            <div class="clearfix"></div>
-                                                            <div class="product_price">
-                                                                <span class="current_price"> SAR 55</span>
-                                                            </div>
-                                                            <p>السعر شامل الضريبة</p>
-                                                            <div class="product_action">
-                                                                <ul>
-                                                                    <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
-                                                                    <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-6 small_padding">
-                                                    <div class="single_product">
-                                                        <div class="product_thumb">
-                                                            <span class="dis_new">جديد</span>
-                                                            <a href=""><img src="img/villa4.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="product_content">
-                                                            <div class="product_ratting float-left">
-                                                                <span> 1.00 <i class="far fa-star"></i> </span>
-                                                            </div>
-                                                            <h3><a href="">اسم العقار</a></h3>
-                                                            <div class="clearfix"></div>
-                                                            <div class="product_price">
-                                                                <span class="current_price"> SAR 55</span>
-                                                            </div>
-                                                            <p>السعر شامل الضريبة</p>
-                                                            <div class="product_action">
-                                                                <ul>
-                                                                    <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
-                                                                    <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-6 small_padding">
-                                                    <div class="single_product">
-                                                        <div class="product_thumb">
-                                                            <span class="dis_new">جديد</span>
-                                                            <a href=""><img src="img/villa5.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="product_content">
-                                                            <div class="product_ratting float-left">
-                                                                <span> 1.00 <i class="far fa-star"></i> </span>
-                                                            </div>
-                                                            <h3><a href="">اسم العقار</a></h3>
-                                                            <div class="clearfix"></div>
-                                                            <div class="product_price">
-                                                                <span class="current_price"> SAR 55</span>
-                                                            </div>
-                                                            <p>السعر شامل الضريبة</p>
-                                                            <div class="product_action">
-                                                                <ul>
-                                                                    <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
-                                                                    <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-6 small_padding">
-                                                    <div class="single_product">
-                                                        <div class="product_thumb">
-                                                            <span class="dis_new">جديد</span>
-                                                            <a href=""><img src="img/villa6.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="product_content">
-                                                            <div class="product_ratting float-left">
-                                                                <span> 1.00 <i class="far fa-star"></i> </span>
-                                                            </div>
-                                                            <h3><a href="">اسم العقار</a></h3>
-                                                            <div class="clearfix"></div>
-                                                            <div class="product_price">
-                                                                <span class="current_price"> SAR 55</span>
-                                                            </div>
-                                                            <p>السعر شامل الضريبة</p>
-                                                            <div class="product_action">
-                                                                <ul>
-                                                                    <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
-                                                                    <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-6 small_padding">
-                                                    <div class="single_product">
-                                                        <div class="product_thumb">
-                                                            <span class="dis_new">جديد</span>
-                                                            <a href=""><img src="img/villa4.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="product_content">
-                                                            <div class="product_ratting float-left">
-                                                                <span> 1.00 <i class="far fa-star"></i> </span>
-                                                            </div>
-                                                            <h3><a href="">اسم العقار</a></h3>
-                                                            <div class="clearfix"></div>
-                                                            <div class="product_price">
-                                                                <span class="current_price"> SAR 55</span>
-                                                            </div>
-                                                            <p>السعر شامل الضريبة</p>
-                                                            <div class="product_action">
-                                                                <ul>
-                                                                    <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
-                                                                    <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-6 small_padding">
-                                                    <div class="single_product">
-                                                        <div class="product_thumb">
-                                                            <span class="dis_new">جديد</span>
-                                                            <a href=""><img src="img/villa2.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="product_content">
-                                                            <div class="product_ratting float-left">
-                                                                <span> 1.00 <i class="far fa-star"></i> </span>
-                                                            </div>
-                                                            <h3><a href="">اسم العقار</a></h3>
-                                                            <div class="clearfix"></div>
-                                                            <div class="product_price">
-                                                                <span class="current_price"> SAR 55</span>
-                                                            </div>
-                                                            <p>السعر شامل الضريبة</p>
-                                                            <div class="product_action">
-                                                                <ul>
-                                                                    <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
-                                                                    <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-6 small_padding">
-                                                    <div class="single_product">
-                                                        <div class="product_thumb">
-                                                            <span class="dis_new">جديد</span>
-                                                            <a href=""><img src="img/villa7.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="product_content">
-                                                            <div class="product_ratting float-left">
-                                                                <span> 1.00 <i class="far fa-star"></i> </span>
-                                                            </div>
-                                                            <h3><a href="">اسم العقار</a></h3>
-                                                            <div class="clearfix"></div>
-                                                            <div class="product_price">
-                                                                <span class="current_price"> SAR 55</span>
-                                                            </div>
-                                                            <p>السعر شامل الضريبة</p>
-                                                            <div class="product_action">
-                                                                <ul>
-                                                                    <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
-                                                                    <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- ================================================ -->
-                                        <div class="tab-pane fade " id="tab1" role="tabpanel1">
-                                            <div class="row">
-                                                <div class="col-lg-3 col-6 small_padding">
-                                                    <div class="single_product">
-                                                        <div class="product_thumb">
-                                                            <span class="dis_quantity">نفذت</span>
-                                                            <a href=""><img src="img/villa2.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="product_content">
-                                                            <div class="product_ratting float-left">
-                                                                <span> 1.00 <i class="far fa-star"></i> </span>
-                                                            </div>
-                                                            <h3><a href="">اسم العقار</a></h3>
-                                                            <div class="clearfix"></div>
-                                                            <div class="product_price">
-                                                                <span class="current_price"> SAR 55</span>
-                                                            </div>
-                                                            <p>السعر شامل الضريبة</p>
-                                                            <div class="product_action">
-                                                                <ul>
-                                                                    <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
-                                                                    <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-6 small_padding">
-                                                    <div class="single_product">
-                                                        <div class="product_thumb">
-
-                                                            <a href=""><img src="img/villa3.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="product_content">
-                                                            <div class="product_ratting float-left">
-                                                                <span> 1.00 <i class="far fa-star"></i> </span>
-                                                            </div>
-                                                            <h3><a href="">اسم العقار</a></h3>
-                                                            <div class="clearfix"></div>
-                                                            <div class="product_price">
-                                                                <span class="current_price"> SAR 55</span>
-                                                            </div>
-                                                            <p>السعر شامل الضريبة</p>
-                                                            <div class="product_action">
-                                                                <ul>
-                                                                    <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
-                                                                    <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-6 small_padding">
-                                                    <div class="single_product">
-                                                        <div class="product_thumb">
-                                                            <span class="dis_quantity">نفذت</span>
-                                                            <a href=""><img src="img/villa4.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="product_content">
-                                                            <div class="product_ratting float-left">
-                                                                <span> 1.00 <i class="far fa-star"></i> </span>
-                                                            </div>
-                                                            <h3><a href="">اسم العقار</a></h3>
-                                                            <div class="clearfix"></div>
-                                                            <div class="product_price">
-                                                                <span class="current_price"> SAR 55</span>
-                                                            </div>
-                                                            <p>السعر شامل الضريبة</p>
-                                                            <div class="product_action">
-                                                                <ul>
-                                                                    <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
-                                                                    <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-6 small_padding">
-                                                    <div class="single_product">
-                                                        <div class="product_thumb">
-
-                                                            <a href=""><img src="img/villa5.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="product_content">
-                                                            <div class="product_ratting float-left">
-                                                                <span> 1.00 <i class="far fa-star"></i> </span>
-                                                            </div>
-                                                            <h3><a href="">اسم العقار</a></h3>
-                                                            <div class="clearfix"></div>
-                                                            <div class="product_price">
-                                                                <span class="current_price"> SAR 55</span>
-                                                            </div>
-                                                            <p>السعر شامل الضريبة</p>
-                                                            <div class="product_action">
-                                                                <ul>
-                                                                    <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
-                                                                    <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-6 small_padding">
-                                                    <div class="single_product">
-                                                        <div class="product_thumb">
-
-                                                            <a href=""><img src="img/villa5.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="product_content">
-                                                            <div class="product_ratting float-left">
-                                                                <span> 1.00 <i class="far fa-star"></i> </span>
-                                                            </div>
-                                                            <h3><a href="">اسم العقار</a></h3>
-                                                            <div class="clearfix"></div>
-                                                            <div class="product_price">
-                                                                <span class="current_price"> SAR 55</span>
-                                                            </div>
-                                                            <p>السعر شامل الضريبة</p>
-                                                            <div class="product_action">
-                                                                <ul>
-                                                                    <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
-                                                                    <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-6 small_padding">
-                                                    <div class="single_product">
-                                                        <div class="product_thumb">
-
-                                                            <a href=""><img src="img/villa6.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="product_content">
-                                                            <div class="product_ratting float-left">
-                                                                <span> 1.00 <i class="far fa-star"></i> </span>
-                                                            </div>
-                                                            <h3><a href="">اسم العقار</a></h3>
-                                                            <div class="clearfix"></div>
-                                                            <div class="product_price">
-                                                                <span class="current_price"> SAR 55</span>
-                                                            </div>
-                                                            <p>السعر شامل الضريبة</p>
-                                                            <div class="product_action">
-                                                                <ul>
-                                                                    <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
-                                                                    <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-6 small_padding">
-                                                    <div class="single_product">
-                                                        <div class="product_thumb">
-                                                            <span class="dis_quantity">نفذت</span>
-                                                            <a href=""><img src="img/villa7.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="product_content">
-                                                            <div class="product_ratting float-left">
-                                                                <span> 1.00 <i class="far fa-star"></i> </span>
-                                                            </div>
-                                                            <h3><a href="">اسم العقار</a></h3>
-                                                            <div class="clearfix"></div>
-                                                            <div class="product_price">
-                                                                <span class="current_price"> SAR 55</span>
-                                                            </div>
-                                                            <p>السعر شامل الضريبة</p>
-                                                            <div class="product_action">
-                                                                <ul>
-                                                                    <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
-                                                                    <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-6 small_padding">
-                                                    <div class="single_product">
-                                                        <div class="product_thumb">
-                                                            <span class="dis_quantity">نفذت</span>
-                                                            <a href=""><img src="img/villa.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="product_content">
-                                                            <div class="product_ratting float-left">
-                                                                <span> 1.00 <i class="far fa-star"></i> </span>
-                                                            </div>
-                                                            <h3><a href="">اسم العقار</a></h3>
-                                                            <div class="clearfix"></div>
-                                                            <div class="product_price">
-                                                                <span class="current_price"> SAR 55</span>
-                                                            </div>
-                                                            <p>السعر شامل الضريبة</p>
-                                                            <div class="product_action">
-                                                                <ul>
-                                                                    <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
-                                                                    <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- ================================================== -->
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane fade " id="tab4" role="tabpanel4">
-                                            <div class="row">
-                                                <div class="col-lg-3 col-6 small_padding">
-                                                    <div class="single_product">
-                                                        <div class="product_thumb">
-                                                            <span class="dis_new">جديد</span>
-                                                            <a href=""><img src="img/villa2.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="product_content">
-                                                            <div class="product_ratting float-left">
-                                                                <span> 1.00 <i class="far fa-star"></i> </span>
-                                                            </div>
-                                                            <h3><a href="">اسم العقار</a></h3>
-                                                            <div class="clearfix"></div>
-                                                            <div class="product_price">
-                                                                <span class="current_price"> SAR 55</span>
-                                                            </div>
-                                                            <p>السعر شامل الضريبة</p>
-                                                            <div class="product_action">
-                                                                <ul>
-                                                                    <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
-                                                                    <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-6 small_padding">
-                                                    <div class="single_product">
-                                                        <div class="product_thumb">
-                                                            <span class="dis_new">جديد</span>
-                                                            <a href=""><img src="img/villa3.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="product_content">
-                                                            <div class="product_ratting float-left">
-                                                                <span> 1.00 <i class="far fa-star"></i> </span>
-                                                            </div>
-                                                            <h3><a href="">اسم العقار</a></h3>
-                                                            <div class="clearfix"></div>
-                                                            <div class="product_price">
-                                                                <span class="current_price"> SAR 55</span>
-                                                            </div>
-                                                            <p>السعر شامل الضريبة</p>
-                                                            <div class="product_action">
-                                                                <ul>
-                                                                    <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
-                                                                    <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-6 small_padding">
-                                                    <div class="single_product">
-                                                        <div class="product_thumb">
-                                                            <span class="dis_new">جديد</span>
-                                                            <a href=""><img src="img/villa4.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="product_content">
-                                                            <div class="product_ratting float-left">
-                                                                <span> 1.00 <i class="far fa-star"></i> </span>
-                                                            </div>
-                                                            <h3><a href="">اسم العقار</a></h3>
-                                                            <div class="clearfix"></div>
-                                                            <div class="product_price">
-                                                                <span class="current_price"> SAR 55</span>
-                                                            </div>
-                                                            <p>السعر شامل الضريبة</p>
-                                                            <div class="product_action">
-                                                                <ul>
-                                                                    <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
-                                                                    <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-6 small_padding">
-                                                    <div class="single_product">
-                                                        <div class="product_thumb">
-                                                            <span class="dis_new">جديد</span>
-                                                            <a href=""><img src="img/villa5.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="product_content">
-                                                            <div class="product_ratting float-left">
-                                                                <span> 1.00 <i class="far fa-star"></i> </span>
-                                                            </div>
-                                                            <h3><a href="">اسم العقار</a></h3>
-                                                            <div class="clearfix"></div>
-                                                            <div class="product_price">
-                                                                <span class="current_price"> SAR 55</span>
-                                                            </div>
-                                                            <p>السعر شامل الضريبة</p>
-                                                            <div class="product_action">
-                                                                <ul>
-                                                                    <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
-                                                                    <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-6 small_padding">
-                                                    <div class="single_product">
-                                                        <div class="product_thumb">
-                                                            <span class="dis_new">جديد</span>
-                                                            <a href=""><img src="img/villa6.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="product_content">
-                                                            <div class="product_ratting float-left">
-                                                                <span> 1.00 <i class="far fa-star"></i> </span>
-                                                            </div>
-                                                            <h3><a href="">اسم العقار</a></h3>
-                                                            <div class="clearfix"></div>
-                                                            <div class="product_price">
-                                                                <span class="current_price"> SAR 55</span>
-                                                            </div>
-                                                            <p>السعر شامل الضريبة</p>
-                                                            <div class="product_action">
-                                                                <ul>
-                                                                    <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
-                                                                    <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-6 small_padding">
-                                                    <div class="single_product">
-                                                        <div class="product_thumb">
-                                                            <span class="dis_new">جديد</span>
-                                                            <a href=""><img src="img/villa4.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="product_content">
-                                                            <div class="product_ratting float-left">
-                                                                <span> 1.00 <i class="far fa-star"></i> </span>
-                                                            </div>
-                                                            <h3><a href="">اسم العقار</a></h3>
-                                                            <div class="clearfix"></div>
-                                                            <div class="product_price">
-                                                                <span class="current_price"> SAR 55</span>
-                                                            </div>
-                                                            <p>السعر شامل الضريبة</p>
-                                                            <div class="product_action">
-                                                                <ul>
-                                                                    <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
-                                                                    <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-6 small_padding">
-                                                    <div class="single_product">
-                                                        <div class="product_thumb">
-                                                            <span class="dis_new">جديد</span>
-                                                            <a href=""><img src="img/villa2.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="product_content">
-                                                            <div class="product_ratting float-left">
-                                                                <span> 1.00 <i class="far fa-star"></i> </span>
-                                                            </div>
-                                                            <h3><a href="">اسم العقار</a></h3>
-                                                            <div class="clearfix"></div>
-                                                            <div class="product_price">
-                                                                <span class="current_price"> SAR 55</span>
-                                                            </div>
-                                                            <p>السعر شامل الضريبة</p>
-                                                            <div class="product_action">
-                                                                <ul>
-                                                                    <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
-                                                                    <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-6 small_padding">
-                                                    <div class="single_product">
-                                                        <div class="product_thumb">
-                                                            <span class="dis_new">جديد</span>
-                                                            <a href=""><img src="img/villa7.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="product_content">
-                                                            <div class="product_ratting float-left">
-                                                                <span> 1.00 <i class="far fa-star"></i> </span>
-                                                            </div>
-                                                            <h3><a href="">اسم العقار</a></h3>
-                                                            <div class="clearfix"></div>
-                                                            <div class="product_price">
-                                                                <span class="current_price"> SAR 55</span>
-                                                            </div>
-                                                            <p>السعر شامل الضريبة</p>
-                                                            <div class="product_action">
-                                                                <ul>
-                                                                    <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
-                                                                    <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane fade " id="tab6" role="tabpanel6">
-                                            <div class="row">
-                                                <div class="col-lg-3 col-6 small_padding">
-                                                    <div class="single_product">
-                                                        <div class="product_thumb">
-                                                            <span class="dis_new">جديد</span>
-                                                            <a href=""><img src="img/villa2.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="product_content">
-                                                            <div class="product_ratting float-left">
-                                                                <span> 1.00 <i class="far fa-star"></i> </span>
-                                                            </div>
-                                                            <h3><a href="">اسم العقار</a></h3>
-                                                            <div class="clearfix"></div>
-                                                            <div class="product_price">
-                                                                <span class="current_price"> SAR 55</span>
-                                                            </div>
-                                                            <p>السعر شامل الضريبة</p>
-                                                            <div class="product_action">
-                                                                <ul>
-                                                                    <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
-                                                                    <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-6 small_padding">
-                                                    <div class="single_product">
-                                                        <div class="product_thumb">
-                                                            <span class="dis_new">جديد</span>
-                                                            <a href=""><img src="img/villa3.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="product_content">
-                                                            <div class="product_ratting float-left">
-                                                                <span> 1.00 <i class="far fa-star"></i> </span>
-                                                            </div>
-                                                            <h3><a href="">اسم العقار</a></h3>
-                                                            <div class="clearfix"></div>
-                                                            <div class="product_price">
-                                                                <span class="current_price"> SAR 55</span>
-                                                            </div>
-                                                            <p>السعر شامل الضريبة</p>
-                                                            <div class="product_action">
-                                                                <ul>
-                                                                    <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
-                                                                    <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-6 small_padding">
-                                                    <div class="single_product">
-                                                        <div class="product_thumb">
-                                                            <span class="dis_new">جديد</span>
-                                                            <a href=""><img src="img/villa4.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="product_content">
-                                                            <div class="product_ratting float-left">
-                                                                <span> 1.00 <i class="far fa-star"></i> </span>
-                                                            </div>
-                                                            <h3><a href="">اسم العقار</a></h3>
-                                                            <div class="clearfix"></div>
-                                                            <div class="product_price">
-                                                                <span class="current_price"> SAR 55</span>
-                                                            </div>
-                                                            <p>السعر شامل الضريبة</p>
-                                                            <div class="product_action">
-                                                                <ul>
-                                                                    <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
-                                                                    <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-6 small_padding">
-                                                    <div class="single_product">
-                                                        <div class="product_thumb">
-                                                            <span class="dis_new">جديد</span>
-                                                            <a href=""><img src="img/villa5.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="product_content">
-                                                            <div class="product_ratting float-left">
-                                                                <span> 1.00 <i class="far fa-star"></i> </span>
-                                                            </div>
-                                                            <h3><a href="">اسم العقار</a></h3>
-                                                            <div class="clearfix"></div>
-                                                            <div class="product_price">
-                                                                <span class="current_price"> SAR 55</span>
-                                                            </div>
-                                                            <p>السعر شامل الضريبة</p>
-                                                            <div class="product_action">
-                                                                <ul>
-                                                                    <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
-                                                                    <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-6 small_padding">
-                                                    <div class="single_product">
-                                                        <div class="product_thumb">
-                                                            <span class="dis_new">جديد</span>
-                                                            <a href=""><img src="img/villa6.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="product_content">
-                                                            <div class="product_ratting float-left">
-                                                                <span> 1.00 <i class="far fa-star"></i> </span>
-                                                            </div>
-                                                            <h3><a href="">اسم العقار</a></h3>
-                                                            <div class="clearfix"></div>
-                                                            <div class="product_price">
-                                                                <span class="current_price"> SAR 55</span>
-                                                            </div>
-                                                            <p>السعر شامل الضريبة</p>
-                                                            <div class="product_action">
-                                                                <ul>
-                                                                    <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
-                                                                    <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-6 small_padding">
-                                                    <div class="single_product">
-                                                        <div class="product_thumb">
-                                                            <span class="dis_new">جديد</span>
-                                                            <a href=""><img src="img/villa4.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="product_content">
-                                                            <div class="product_ratting float-left">
-                                                                <span> 1.00 <i class="far fa-star"></i> </span>
-                                                            </div>
-                                                            <h3><a href="">اسم العقار</a></h3>
-                                                            <div class="clearfix"></div>
-                                                            <div class="product_price">
-                                                                <span class="current_price"> SAR 55</span>
-                                                            </div>
-                                                            <p>السعر شامل الضريبة</p>
-                                                            <div class="product_action">
-                                                                <ul>
-                                                                    <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
-                                                                    <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-6 small_padding">
-                                                    <div class="single_product">
-                                                        <div class="product_thumb">
-                                                            <span class="dis_new">جديد</span>
-                                                            <a href=""><img src="img/villa2.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="product_content">
-                                                            <div class="product_ratting float-left">
-                                                                <span> 1.00 <i class="far fa-star"></i> </span>
-                                                            </div>
-                                                            <h3><a href="">اسم العقار</a></h3>
-                                                            <div class="clearfix"></div>
-                                                            <div class="product_price">
-                                                                <span class="current_price"> SAR 55</span>
-                                                            </div>
-                                                            <p>السعر شامل الضريبة</p>
-                                                            <div class="product_action">
-                                                                <ul>
-                                                                    <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
-                                                                    <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-6 small_padding">
-                                                    <div class="single_product">
-                                                        <div class="product_thumb">
-                                                            <span class="dis_new">جديد</span>
-                                                            <a href=""><img src="img/villa7.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="product_content">
-                                                            <div class="product_ratting float-left">
-                                                                <span> 1.00 <i class="far fa-star"></i> </span>
-                                                            </div>
-                                                            <h3><a href="">اسم العقار</a></h3>
-                                                            <div class="clearfix"></div>
-                                                            <div class="product_price">
-                                                                <span class="current_price"> SAR 55</span>
-                                                            </div>
-                                                            <p>السعر شامل الضريبة</p>
-                                                            <div class="product_action">
-                                                                <ul>
-                                                                    <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
-                                                                    <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane fade " id="tab8" role="tabpanel8">
-                                            <div class="row">
-                                                <div class="col-lg-3 col-6 small_padding">
-                                                    <div class="single_product">
-                                                        <div class="product_thumb">
-                                                            <span class="dis_new">جديد</span>
-                                                            <a href=""><img src="img/villa2.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="product_content">
-                                                            <div class="product_ratting float-left">
-                                                                <span> 1.00 <i class="far fa-star"></i> </span>
-                                                            </div>
-                                                            <h3><a href="">اسم العقار</a></h3>
-                                                            <div class="clearfix"></div>
-                                                            <div class="product_price">
-                                                                <span class="current_price"> SAR 55</span>
-                                                            </div>
-                                                            <p>السعر شامل الضريبة</p>
-                                                            <div class="product_action">
-                                                                <ul>
-                                                                    <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
-                                                                    <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-6 small_padding">
-                                                    <div class="single_product">
-                                                        <div class="product_thumb">
-                                                            <span class="dis_new">جديد</span>
-                                                            <a href=""><img src="img/villa3.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="product_content">
-                                                            <div class="product_ratting float-left">
-                                                                <span> 1.00 <i class="far fa-star"></i> </span>
-                                                            </div>
-                                                            <h3><a href="">اسم العقار</a></h3>
-                                                            <div class="clearfix"></div>
-                                                            <div class="product_price">
-                                                                <span class="current_price"> SAR 55</span>
-                                                            </div>
-                                                            <p>السعر شامل الضريبة</p>
-                                                            <div class="product_action">
-                                                                <ul>
-                                                                    <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
-                                                                    <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-6 small_padding">
-                                                    <div class="single_product">
-                                                        <div class="product_thumb">
-                                                            <span class="dis_new">جديد</span>
-                                                            <a href=""><img src="img/villa4.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="product_content">
-                                                            <div class="product_ratting float-left">
-                                                                <span> 1.00 <i class="far fa-star"></i> </span>
-                                                            </div>
-                                                            <h3><a href="">اسم العقار</a></h3>
-                                                            <div class="clearfix"></div>
-                                                            <div class="product_price">
-                                                                <span class="current_price"> SAR 55</span>
-                                                            </div>
-                                                            <p>السعر شامل الضريبة</p>
-                                                            <div class="product_action">
-                                                                <ul>
-                                                                    <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
-                                                                    <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-6 small_padding">
-                                                    <div class="single_product">
-                                                        <div class="product_thumb">
-                                                            <span class="dis_new">جديد</span>
-                                                            <a href=""><img src="img/villa5.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="product_content">
-                                                            <div class="product_ratting float-left">
-                                                                <span> 1.00 <i class="far fa-star"></i> </span>
-                                                            </div>
-                                                            <h3><a href="">اسم العقار</a></h3>
-                                                            <div class="clearfix"></div>
-                                                            <div class="product_price">
-                                                                <span class="current_price"> SAR 55</span>
-                                                            </div>
-                                                            <p>السعر شامل الضريبة</p>
-                                                            <div class="product_action">
-                                                                <ul>
-                                                                    <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
-                                                                    <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-6 small_padding">
-                                                    <div class="single_product">
-                                                        <div class="product_thumb">
-                                                            <span class="dis_new">جديد</span>
-                                                            <a href=""><img src="img/villa6.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="product_content">
-                                                            <div class="product_ratting float-left">
-                                                                <span> 1.00 <i class="far fa-star"></i> </span>
-                                                            </div>
-                                                            <h3><a href="">اسم العقار</a></h3>
-                                                            <div class="clearfix"></div>
-                                                            <div class="product_price">
-                                                                <span class="current_price"> SAR 55</span>
-                                                            </div>
-                                                            <p>السعر شامل الضريبة</p>
-                                                            <div class="product_action">
-                                                                <ul>
-                                                                    <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
-                                                                    <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-6 small_padding">
-                                                    <div class="single_product">
-                                                        <div class="product_thumb">
-                                                            <span class="dis_new">جديد</span>
-                                                            <a href=""><img src="img/villa4.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="product_content">
-                                                            <div class="product_ratting float-left">
-                                                                <span> 1.00 <i class="far fa-star"></i> </span>
-                                                            </div>
-                                                            <h3><a href="">اسم العقار</a></h3>
-                                                            <div class="clearfix"></div>
-                                                            <div class="product_price">
-                                                                <span class="current_price"> SAR 55</span>
-                                                            </div>
-                                                            <p>السعر شامل الضريبة</p>
-                                                            <div class="product_action">
-                                                                <ul>
-                                                                    <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
-                                                                    <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-6 small_padding">
-                                                    <div class="single_product">
-                                                        <div class="product_thumb">
-                                                            <span class="dis_new">جديد</span>
-                                                            <a href=""><img src="img/villa2.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="product_content">
-                                                            <div class="product_ratting float-left">
-                                                                <span> 1.00 <i class="far fa-star"></i> </span>
-                                                            </div>
-                                                            <h3><a href="">اسم العقار</a></h3>
-                                                            <div class="clearfix"></div>
-                                                            <div class="product_price">
-                                                                <span class="current_price"> SAR 55</span>
-                                                            </div>
-                                                            <p>السعر شامل الضريبة</p>
-                                                            <div class="product_action">
-                                                                <ul>
-                                                                    <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
-                                                                    <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-6 small_padding">
-                                                    <div class="single_product">
-                                                        <div class="product_thumb">
-                                                            <span class="dis_new">جديد</span>
-                                                            <a href=""><img src="img/villa7.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="product_content">
-                                                            <div class="product_ratting float-left">
-                                                                <span> 1.00 <i class="far fa-star"></i> </span>
-                                                            </div>
-                                                            <h3><a href="">اسم العقار</a></h3>
-                                                            <div class="clearfix"></div>
-                                                            <div class="product_price">
-                                                                <span class="current_price"> SAR 55</span>
-                                                            </div>
-                                                            <p>السعر شامل الضريبة</p>
-                                                            <div class="product_action">
-                                                                <ul>
-                                                                    <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
-                                                                    <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- =================================================== -->
+            </div>
+            <!-- End Section breadcrumb_content  -->
+            <!-- =========================================================================================== -->
+
+            <!-- =========================================================================================== -->
+            <div class="container">
+                <!--shop wrapper start-->
+                <div class="shop_wrapper ">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-12">
+                                <div class="sidebar_widget showed-btn">
+                                    <form id="amr">
+                                        <!--widget color start-->
+                                        <div class="widget_list widget_color">
+                                            <div class="inner_title_product">
+                                                <h5 class="section_title  float-right">اقسام المتجر</h5>
+                                                <div class="clos_filter d-block d-lg-none"><span aria-hidden="true">×</span></div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                            <ul>
+                                                <li>
+                                                    <input class="form-check-input" type="checkbox" name="category" value="1" id="category">
+                                                    <label class="form-check-label">عقارات</label>
+
+                                                </li>
+                                                <li>
+                                                    <input class="form-check-input" type="checkbox" name="category" value="4" id="category">
+                                                    <label class="form-check-label">فلل</label>
+
+                                                </li>
+                                                <li>
+                                                    <input class="form-check-input" type="checkbox" name="category" value="6" id="category">
+                                                    <label class="form-check-label"> عمارات </label>
+
+                                                </li>
+                                                <li>
+                                                    <input class="form-check-input" type="checkbox" name="category" value="7" id="category">
+                                                    <label class="form-check-label">ديكورات </label>
+
+                                                </li>
+                                                <li>
+                                                    <input class="form-check-input" type="checkbox" name="category" value="8" id="category">
+                                                    <label class="form-check-label">تصميمات </label>
+
+                                                </li>
+
+                                            </ul>
+                                        </div>
+
+                                        <div class="widget_list widget_color">
+                                            <div class="inner_title_product">
+                                                <h2 class="section_title  float-right">العرض بحسب</h2>
+                                            </div>
+                                            <ul>
+
+                                                <li>
+                                                    <input class="form-check-input" type="checkbox" name="category" value="1" id="display1">
+                                                    <label class="form-check-label">جديد </label>
+                                                </li>
+
+                                                <li>
+                                                    <input class="form-check-input" type="checkbox" name="category" value="2" id="display2">
+                                                    <label class="form-check-label">مخفض </label>
+                                                </li>
+
+                                                <li>
+                                                    <input class="form-check-input" type="checkbox" name="category" value="3" id="display3">
+                                                    <label class="form-check-label">الأكثر طلبا </label>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+
+                                        <div class="widget_list widget_color">
+                                            <div class="inner_title_product">
+                                                <h2 class="section_title  float-right">السعر</h2>
+                                            </div>
+                                            <ul>
+                                                <section class="range-slider">
+                                                    <label>ادخل اقل سعر</label>
+                                                    <input placeholder="ادخل اقل سعر" type="number" name="price" class="form-control" id="price1">
+                                                    <label>ادخل اعلى سعر</label>
+                                                    <input placeholder="ادخل اعلى سعر" type="number" name="price" class="form-control" id="price2">
+                                                    <span class="rangeValues"></span>
+                                                </section>
+                                                <button type="button" class="mt_20 btn btn-primary contact-btn">فرز</button>
+                                            </ul>
+                                        </div>
+                                    </form>
+                                    <!--widget banner start-->
+                                    <div class="widget_list banner show_in_large">
+                                        <div class="banner_thumb">
+                                            <a href=""><img src="" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <!--widget banner end-->
+                                </div>
+                            </div>
+                            <div class="col-lg-9 col-md-12">
+                                <!--shop toolbar start-->
+                                <form id="amr2" class="order_filter show_order">
+                                    <div class="oder_title d-lg-none d-block">فرز حسب <span class="clos_order" aria-hidden="true">×</span></div>
+                                    <div class="shop_toolbar row">
+
+                                        <div class="select_option number">
+
+                                            <label>عرض</label>
+                                            <select class="form-control form-control-sm" name="show" id="show">
+                                                        <option value="12">12</option>
+                                                        <option value="20">20</option>
+                                                        <option value="36">36</option>
+                                                        <option value="48">48</option>
+                                                    </select>
+
+                                        </div>
+
+                                        <div class="select_option">
+                                            <form action="#">
+                                                <label>فرز حسب</label>
+                                                <select class="form-control form-control-sm" name="sort" id="sort">
+                                                        <option value="0">الاحدث</option>
+                                                        <option value="3">الاسم أ-ي</option>
+                                                        <option value="4">الاسم ي-أ</option>
+                                                        
+                                                        <option value="1"> الاعلى سعرا</option>
+                                                        <option value="2">الاقل سعرا</option>
+                                                        <option value="5">الاكثر مشاهدة</option>
+                                                        <option value="6">الأكثر طلبا</option>
+                                                        
+                                                    </select>
+                                            </form>
+                                        </div>
+
+                                        <div>
+                                            <span class="showcount"> </span>
+                                        </div>
+                                        <div class="list_button">
+                                            <ul class="nav" role="tablist">
+                                                <li>
+                                                    <a class="active" data-toggle="tab" href="#large" role="tab" aria-controls="large" aria-selected="true"><i class="fas fa-th-large"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a data-toggle="tab" href="#list" role="tab" aria-controls="list" aria-selected="false"><i class="fas fa-bars"></i></a>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+
+                                    </div>
+                                </form>
+                                <!--shop toolbar end-->
+                                <!--shop tab product-->
+                                <div id="product" data-pjax-container="" data-pjax-push-state="" data-pjax-timeout="1000">
+                                    <div class="shop_tab_product">
+                                        <div class="tab-content" id="myTabContent">
+                                            <div class="tab-pane fade  show active " id="large" role="tabpanel">
+                                                <div class="row">
+                                                    <div class="col-lg-4 col-6 small_padding">
+                                                        <div class="single_product">
+                                                            <div class="product_thumb">
+                                                                <span class="dis_new">جديد</span>
+                                                                <a href="display_product.html"><img src="img/villa2.jpg" alt=""></a>
+                                                            </div>
+                                                            <div class="product_content">
+                                                                <div class="product_ratting float-left">
+                                                                    <span> 1.00 <i class="far fa-star"></i> </span>
+                                                                </div>
+                                                                <h3><a href="display_product.html">اسم العقار</a></h3>
+                                                                <div class="clearfix"></div>
+                                                                <div class="product_price">
+                                                                    <span class="current_price"> SAR 55</span>
+                                                                </div>
+                                                                <p>السعر شامل الضريبة</p>
+                                                                <div class="product_action">
+                                                                    <ul>
+                                                                        <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
+                                                                        <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- ================================================== -->
+
+                                                    <div class="col-lg-4 col-6 small_padding">
+                                                        <div class="single_product">
+                                                            <div class="product_thumb">
+                                                                <span class="dis_new">جديد</span>
+                                                                <a href="display_product.html"><img src="img/villa2.jpg" alt=""></a>
+                                                            </div>
+                                                            <div class="product_content">
+                                                                <div class="product_ratting float-left">
+                                                                    <span> 1.00 <i class="far fa-star"></i> </span>
+                                                                </div>
+                                                                <h3><a href="display_product.html">اسم العقار</a></h3>
+                                                                <div class="clearfix"></div>
+                                                                <div class="product_price">
+                                                                    <span class="current_price"> SAR 55</span>
+                                                                </div>
+                                                                <p>السعر شامل الضريبة</p>
+                                                                <div class="product_action">
+                                                                    <ul>
+                                                                        <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
+                                                                        <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- ================================================== -->
+
+                                                    <div class="col-lg-4 col-6 small_padding">
+                                                        <div class="single_product">
+                                                            <div class="product_thumb">
+                                                                <span class="dis_new">جديد</span>
+                                                                <a href="display_product.html"><img src="img/villa2.jpg" alt=""></a>
+                                                            </div>
+                                                            <div class="product_content">
+                                                                <div class="product_ratting float-left">
+                                                                    <span> 1.00 <i class="far fa-star"></i> </span>
+                                                                </div>
+                                                                <h3><a href="display_product.html">اسم العقار</a></h3>
+                                                                <div class="clearfix"></div>
+                                                                <div class="product_price">
+                                                                    <span class="current_price"> SAR 55</span>
+                                                                </div>
+                                                                <p>السعر شامل الضريبة</p>
+                                                                <div class="product_action">
+                                                                    <ul>
+                                                                        <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
+                                                                        <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <!-- ================================================== -->
+
+                                                    <div class="col-lg-4 col-6 small_padding">
+                                                        <div class="single_product">
+                                                            <div class="product_thumb">
+                                                                <span class="dis_new">جديد</span>
+                                                                <a href="display_product.html"><img src="img/villa2.jpg" alt=""></a>
+                                                            </div>
+                                                            <div class="product_content">
+                                                                <div class="product_ratting float-left">
+                                                                    <span> 1.00 <i class="far fa-star"></i> </span>
+                                                                </div>
+                                                                <h3><a href="display_product.html">اسم العقار</a></h3>
+                                                                <div class="clearfix"></div>
+                                                                <div class="product_price">
+                                                                    <span class="current_price"> SAR 55</span>
+                                                                </div>
+                                                                <p>السعر شامل الضريبة</p>
+                                                                <div class="product_action">
+                                                                    <ul>
+                                                                        <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
+                                                                        <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- ================================================== -->
+
+                                                    <div class="col-lg-4 col-6 small_padding">
+                                                        <div class="single_product">
+                                                            <div class="product_thumb">
+                                                                <span class="dis_new">جديد</span>
+                                                                <a href="display_product.html"><img src="img/villa2.jpg" alt=""></a>
+                                                            </div>
+                                                            <div class="product_content">
+                                                                <div class="product_ratting float-left">
+                                                                    <span> 1.00 <i class="far fa-star"></i> </span>
+                                                                </div>
+                                                                <h3><a href="display_product.html">اسم العقار</a></h3>
+                                                                <div class="clearfix"></div>
+                                                                <div class="product_price">
+                                                                    <span class="current_price"> SAR 55</span>
+                                                                </div>
+                                                                <p>السعر شامل الضريبة</p>
+                                                                <div class="product_action">
+                                                                    <ul>
+                                                                        <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
+                                                                        <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- ================================================== -->
+
+                                                    <div class="col-lg-4 col-6 small_padding">
+                                                        <div class="single_product">
+                                                            <div class="product_thumb">
+                                                                <span class="dis_new">جديد</span>
+                                                                <a href="display_product.html"><img src="img/villa2.jpg" alt=""></a>
+                                                            </div>
+                                                            <div class="product_content">
+                                                                <div class="product_ratting float-left">
+                                                                    <span> 1.00 <i class="far fa-star"></i> </span>
+                                                                </div>
+                                                                <h3><a href="display_product.html">اسم العقار</a></h3>
+                                                                <div class="clearfix"></div>
+                                                                <div class="product_price">
+                                                                    <span class="current_price"> SAR 55</span>
+                                                                </div>
+                                                                <p>السعر شامل الضريبة</p>
+                                                                <div class="product_action">
+                                                                    <ul>
+                                                                        <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
+                                                                        <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="list" role="tabpanel">
+                                                <div class="row">
+                                                    <div class="single_product list_item">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-lg-4 col-md-5">
+                                                                <div class="product_thumb">
+                                                                    <a href="display_product.html"><img src="img/villa2.jpg"></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-8 col-md-7">
+                                                                <div class="product_content">
+                                                                    <div class="product_ratting float-left">
+                                                                        <span> 1.00 <i class="far fa-star"></i> </span>
+                                                                    </div>
+                                                                    <h3><a href="display_product.html">اسم العقار</a></h3>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="product_description">
+                                                                        <p>معلومات عن العقار </p>
+                                                                    </div>
+                                                                    <div class="product_price">
+                                                                        <span class="current_price"> SAR 140</span>
+                                                                    </div>
+                                                                    <p>السعر شامل الضريبة</p>
+                                                                    <div class="product_action">
+                                                                        <ul>
+                                                                            <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
+                                                                            <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <!-- ================================================== -->
+                                                    <div class="single_product list_item">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-lg-4 col-md-5">
+                                                                <div class="product_thumb">
+                                                                    <a href="display_product.html"><img src="img/villa2.jpg"></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-8 col-md-7">
+                                                                <div class="product_content">
+                                                                    <div class="product_ratting float-left">
+                                                                        <span> 1.00 <i class="far fa-star"></i> </span>
+                                                                    </div>
+                                                                    <h3><a href="display_product.html">اسم العقار</a></h3>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="product_description">
+                                                                        <p>معلومات عن العقار </p>
+                                                                    </div>
+                                                                    <div class="product_price">
+                                                                        <span class="current_price"> SAR 140</span>
+                                                                    </div>
+                                                                    <p>السعر شامل الضريبة</p>
+                                                                    <div class="product_action">
+                                                                        <ul>
+                                                                            <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
+                                                                            <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <!-- ================================================== -->
+                                                    <div class="single_product list_item">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-lg-4 col-md-5">
+                                                                <div class="product_thumb">
+                                                                    <a href="display_product.html"><img src="img/villa2.jpg"></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-8 col-md-7">
+                                                                <div class="product_content">
+                                                                    <div class="product_ratting float-left">
+                                                                        <span> 1.00 <i class="far fa-star"></i> </span>
+                                                                    </div>
+                                                                    <h3><a href="display_product.html">اسم العقار</a></h3>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="product_description">
+                                                                        <p>معلومات عن العقار </p>
+                                                                    </div>
+                                                                    <div class="product_price">
+                                                                        <span class="current_price"> SAR 140</span>
+                                                                    </div>
+                                                                    <p>السعر شامل الضريبة</p>
+                                                                    <div class="product_action">
+                                                                        <ul>
+                                                                            <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
+                                                                            <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- ================================================== -->
+                                                    <div class="single_product list_item">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-lg-4 col-md-5">
+                                                                <div class="product_thumb">
+                                                                    <a href="display_product.html"><img src="img/villa2.jpg"></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-8 col-md-7">
+                                                                <div class="product_content">
+                                                                    <div class="product_ratting float-left">
+                                                                        <span> 1.00 <i class="far fa-star"></i> </span>
+                                                                    </div>
+                                                                    <h3><a href="display_product.html">اسم العقار</a></h3>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="product_description">
+                                                                        <p>معلومات عن العقار </p>
+                                                                    </div>
+                                                                    <div class="product_price">
+                                                                        <span class="current_price"> SAR 140</span>
+                                                                    </div>
+                                                                    <p>السعر شامل الضريبة</p>
+                                                                    <div class="product_action">
+                                                                        <ul>
+                                                                            <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
+                                                                            <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <!-- ================================================== -->
+                                                    <div class="single_product list_item">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-lg-4 col-md-5">
+                                                                <div class="product_thumb">
+                                                                    <a href="display_product.html"><img src="img/villa2.jpg"></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-8 col-md-7">
+                                                                <div class="product_content">
+                                                                    <div class="product_ratting float-left">
+                                                                        <span> 1.00 <i class="far fa-star"></i> </span>
+                                                                    </div>
+                                                                    <h3><a href="display_product.html">اسم العقار</a></h3>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="product_description">
+                                                                        <p>معلومات عن العقار </p>
+                                                                    </div>
+                                                                    <div class="product_price">
+                                                                        <span class="current_price"> SAR 140</span>
+                                                                    </div>
+                                                                    <p>السعر شامل الضريبة</p>
+                                                                    <div class="product_action">
+                                                                        <ul>
+                                                                            <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
+                                                                            <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+
+                                                    <!-- ================================================== -->
+                                                    <div class="single_product list_item">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-lg-4 col-md-5">
+                                                                <div class="product_thumb">
+                                                                    <a href="display_product.html"><img src="img/villa2.jpg"></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-8 col-md-7">
+                                                                <div class="product_content">
+                                                                    <div class="product_ratting float-left">
+                                                                        <span> 1.00 <i class="far fa-star"></i> </span>
+                                                                    </div>
+                                                                    <h3><a href="display_product.html">اسم العقار</a></h3>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="product_description">
+                                                                        <p>معلومات عن العقار </p>
+                                                                    </div>
+                                                                    <div class="product_price">
+                                                                        <span class="current_price"> SAR 140</span>
+                                                                    </div>
+                                                                    <p>السعر شامل الضريبة</p>
+                                                                    <div class="product_action">
+                                                                        <ul>
+                                                                            <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
+                                                                            <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <!-- ================================================== -->
+                                                    <div class="single_product list_item">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-lg-4 col-md-5">
+                                                                <div class="product_thumb">
+                                                                    <a href="display_product.html"><img src="img/villa2.jpg"></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-8 col-md-7">
+                                                                <div class="product_content">
+                                                                    <div class="product_ratting float-left">
+                                                                        <span> 1.00 <i class="far fa-star"></i> </span>
+                                                                    </div>
+                                                                    <h3><a href="display_product.html">اسم العقار</a></h3>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="product_description">
+                                                                        <p>معلومات عن العقار </p>
+                                                                    </div>
+                                                                    <div class="product_price">
+                                                                        <span class="current_price"> SAR 140</span>
+                                                                    </div>
+                                                                    <p>السعر شامل الضريبة</p>
+                                                                    <div class="product_action">
+                                                                        <ul>
+                                                                            <li class="product_cart"><a href="#view_product" data-toggle="modal" data-target="" title="" data-original-title="اضافة الى السلة">اضافة الى السلة</a></li>
+                                                                            <li class="add_links a_curson"><a title="" data-original-title="اضافة الى المفضلة"><i class="far fa-heart"></i></a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!--shop tab product end-->
+
+                                    <!--pagination style start-->
+                                    <div class="col-12 my-3" style="direction: ltr;">
+                                        <nav aria-label="...">
+                                            <ul class="pagination pagination">
+                                                <li class="page-item active" aria-current="page">
+                                                    <span class="page-link">
+                                                  1
+                                                  <span class="sr-only">(current)</span>
+                                                    </span>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <!--pagination style end-->
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Modal -->
                 <div class="modal fade" id="view_product" tabindex="-1" aria-labelledby="view_productLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">اسم العقار داخل المتجر</h5>
+                                <h5 class="modal-title" id="exampleModalLabel">اسم العقار </h5>
                                 <button type="button" class="close ml-0" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -1551,7 +1048,7 @@
                                             <hr>
                                             <div class="action-buttons modal_action relative ">
 
-                                                <button type="submit" class="btn btn-primary contact-btn fav_addtocart"><img class="add_to_cart_img" src="img/add-bagwhite.png" width="20">اضف للسلة</button>
+                                                <a type="submit" class="btn btn-primary contact-btn fav_addtocart"><img class="add_to_cart_img" src="img/add-bagwhite.png" width="20">اضف للسلة</a>
                                                 <a href="#" class="btn btn-primary contact-btn fav_addtocart">
                                                     <img class="add_to_cart_img" src="img/heart-white.png" width="20">
                                                     <span class="custom_height2">اضافة الى المفضلة</span>
@@ -1568,16 +1065,9 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- End Section Best_seller  -->
-
-            <!-- =========================================================================================== -->
+            </div>
 
 
-            <!-- =========================================================================================== -->
-            <!-- Start Section new  -->
-
-            <!-- End Section new  -->
 
             <!-- =========================================================================================== -->
             <div class="div-30"></div>
@@ -1585,7 +1075,7 @@
             <!-- Start Footer  -->
 
             <!-- Desktop footer -->
-            <div class="footer_top orang_bg d-block">
+            <div class="footer_top orang_bg d-none d-lg-block">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4">
@@ -1637,11 +1127,11 @@
                                 <div class="single_footer">
                                     <h3>خريطة الموقع</h3>
                                     <ul>
-                                        <li class=" active "><a href="/shop/">الرئيسية</a></li>
-                                        <li class=""><a href="/shop/about">معلومات عنا</a></li>
-                                        <li class=""><a href="/shop/service">الخدمات</a></li>
-                                        <li class=""><a href="/shop/category">الاقسام</a></li>
-                                        <li class=""><a href="/shop/term">الشروط والاحكام</a></li>
+                                        <li class=" active "><a href="index.html">الرئيسية</a></li>
+                                        <li class=""><a href="about.html">معلومات عنا</a></li>
+                                        <li class=""><a href="">الخدمات</a></li>
+                                        <li class=""><a href="category.html">الاقسام</a></li>
+                                        <li class=""><a href="terms.html">الشروط والاحكام</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -1649,11 +1139,11 @@
                                 <div class="single_footer padding_site_map">
 
                                     <ul>
-                                        <li class=""><a href="/shop/branch">فروعنا</a></li>
-                                        <li class=""><a href="/shop/download-app">حمل التطبيقات</a></li>
-                                        <li class=""><a href="/shop/payment">طرق الدفع</a></li>
-                                        <li class=""><a href="/shop/center">مركز المساعدة</a></li>
-                                        <li class=""><a href="/shop/contact">تواصل معنا</a></li>
+                                        <li class=""><a href="branch.html">فروعنا</a></li>
+                                        <li class=""><a href="download_app.html">حمل التطبيقات</a></li>
+                                        <li class=""><a href="payment.html">طرق الدفع</a></li>
+                                        <li class=""><a href="center.html">مركز المساعدة</a></li>
+                                        <li class=""><a href="contact.html">تواصل معنا</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -1722,21 +1212,21 @@
                         </div>
                         <div class="col-3 p-0">
                             <div class="link-footer">
-                                <a href="#">
+                                <a href="category.html">
                                       أحدث المنتجات
                                     </a>
                             </div>
                         </div>
                         <div class="col-3 p-0">
                             <div class="link-footer">
-                                <a href="#">
+                                <a href="favorite.html">
                                        المفضلة
                                     </a>
                             </div>
                         </div>
                         <div class="col-3 p-0">
                             <div class="link-footer">
-                                <a href="#">
+                                <a href="acountsetting.html">
                                         حسابي
                                     </a>
                             </div>

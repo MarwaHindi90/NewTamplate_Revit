@@ -18,6 +18,82 @@
     .statistics .counter-box .number {
         font-size: 1.75rem
     }
+    .list_button,
+    .select_option.number {
+        margin-bottom: 20px;
+    }
+    .order_filter {
+        position: fixed;
+        bottom: -300px;
+        width: 100%;
+        background: #fff;
+        z-index: 9999;
+        right: 0;
+        left: 0;
+        -webkit-transition: all 0.35s ease-out;
+        -moz-transition: all 0.35s ease-out;
+        transition: all 0.35s ease-out;
+    }
+    .sidebar_widget {
+        position: fixed;
+        top: 0px;
+        background: #fff;
+        width: 250px;
+        z-index: 9999;
+        padding: 15px;
+        right: -300px;
+        overflow-x: scroll;
+        -webkit-transition: all 0.35s ease-out;
+        -moz-transition: all 0.35s ease-out;
+        transition: all 0.35s ease-out;
+        height: 100%;
+        -ms-transition: all 0.35s ease-out;
+        -o-transition: all 0.35s ease-out;
+    }
+    .cat_filter {
+        text-align: center;
+        background: #f5f5f5;
+        padding: 10px 10px;
+    }
+    .cat_filter span {
+        margin: 0 30px;
+    }
+    .cat_filter img {
+        width: 25px;
+    }
+    .oder_title {
+        background: var(--background-color);
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        font-size: 20px;
+    }
+    .clos_filter {
+        float: left;
+        font-size: 45px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        background: var(--background-color);
+        border-radius: 50%;
+        color: #fff;
+        overflow: hidden;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 27px;
+    }
+    .order_filter select {
+        width: 100%;
+        max-width: 100% !important;
+    }
+    .order_filter .shop_toolbar {
+        padding: 0 30px;
+    }
+    .order_filter .select_option {
+        width: 100%;
+        margin-bottom: 5px;
+    }
 }
 
 @media(max-width:768px) {
@@ -66,7 +142,7 @@
         padding: 3px 12px;
     }
     .product_ratting span {
-        padding: 2px;
+        padding: 3px;
         font-size: 12px;
     }
     .product_price span.current_price {
@@ -78,6 +154,10 @@
 }
 
 @media (max-width: 400px) {
+    .product_ratting span {
+        padding: 2px;
+        font-size: 10px;
+    }
     .product_tab_button ul li a {
         border-radius: 20px;
         padding: 1px 5px;
